@@ -1,0 +1,59 @@
+mixin blockContacts(data)
+	section.block-contacts
+		.container
+			.flexGrid
+				.flexCell.flexCell-d-w100
+					.block-contacts__inner
+						.block-contacts__left
+							.logo
+								a(href='#')
+									img(src='assets/images/logo.png' alt='')
+							.section-title
+								h5 Контактная информация
+								hr
+							p.address
+								| ООО "Строй Глобал" 
+								br
+								| Химки, ул. Рабочая, 2А, к2
+							ul.contacts-phone
+								li
+									a(href='#') 8 (495) 191-15-34
+									span  — отдел продаж
+								li
+									a(href='#') +7 (495) 540-45-80
+									span — офис
+							.email
+								a.link-underStyle(href='#') sale@bkl-stone.ru
+							.mini-networks
+								a(href='#')
+									i.icon-3-8_vk-black
+								a(href='#')
+									i.icon-3-7_facebook-black
+								a(href='#')
+									i.icon-3-9_twitter-black
+						.block-contacts__right.block-border
+							.block-border__inner
+								.section-title
+									h3 Напишите нам
+									hr
+								form.form-feedback
+									.form-feedback__left
+										label.w-100.input-wrap
+											input(type='text' placeholder='Ваше имя')
+										label.w-50.input-wrap
+											input.tel-valid(type='text' placeholder='Телефон')
+										label.w-50.input-wrap
+											input(type='email' placeholder='Е-mail')
+										label.input-brim
+											input(type='checkbox')
+											p
+												| Я даю
+												a(href='#')  Согласие на обработку персональных данных
+									.form-feedback__right
+										label.input-wrap
+											textarea(name='' id='' cols='30' rows='10' placeholder='Ваш вопрос или комментарии')
+										.bg-Festival.modalOpen(data-modal='3')
+											button(type='button')
+												span
+													| Отправить 
+													em сообщение

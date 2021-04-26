@@ -1,0 +1,41 @@
+:root {
+    --mainColor: #453933;
+    --mainFont: "CeraPro", sans-serif;
+    --mainSize: 16px;
+    --Sisal: #c6bda9;
+    --White: #ffffff;
+    --WoodBark: #362a24;
+    --Akaroa: #bcb39a;
+    --PaleOyster: #958c74;
+    --Festival: #f5d343;
+    --Saffron: #eac632;
+    --Galliano: #dfa729;
+    --Dorado: #69605b;
+    --Flamingo: #db6b4d;
+    --GoldenBrown: #9b6601;
+    --Narvik: #eae8e1;
+    --Cork: #574c45;
+    --Akaroa1: #c2b59b;
+    --WoodBark1: #251710;
+    --PaleOyster: #958c74;
+    --FloralWhite: #f9f8f4;
+    --WanWhite: #e4e0d7;
+    --Sisal: #c0b79f;
+    --Americano: #87796f;
+    --Soapstone: #eae4d9;
+    --Nugget: #c18e1d;
+    --SandDune: #817268;
+    --DonkeyBrown: #7e6f65;
+    --Tobago: #46362f;
+    --Malibu:#5BC0DE;
+    --FireBrick: #b91818;
+    --AlbescentWhite: #e3ddcd;
+    --Mantis: #80B358;
+}
+
+@media(max-width: 767px){
+:root{
+    --mainSize: 14px;
+}
+}
+/*# sourceMappingURL=../../maps/styles/default/variables.css.map */

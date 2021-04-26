@@ -3,7 +3,7 @@ mixin allcss()
 	//- link(rel="stylesheet", href="libs/Easy-Responsive-Tab-Accordion-Control-Plugin-For-jQuery/easy-responsive-tabs.css")
  
 	//- link(href="libs/swiper/css/swiper.min.css", rel="stylesheet") 
-	link(href="libs/@fancyapps/fancybox/jquery.fancybox.min.css", rel="stylesheet")
+	//- link(href="libs/@fancyapps/fancybox/jquery.fancybox.min.css", rel="stylesheet")
 	link(href="css/main.min.css", rel="stylesheet")
 
 mixin allcjs()
@@ -11,17 +11,20 @@ mixin allcjs()
 
 	//- script(src="libs/loading-attribute-polyfill/loading-attribute-polyfill.min.js")
 
-	// modal libs
-	script(src="libs/jquery/jquery.min.js")
-	script(src="libs/@fancyapps/fancybox/jquery.fancybox.min.js")
-	// modal libs
-	// slider libs
-	script(src="libs/swiper/swiper-bundle.min.js") 
-	// /slider libs
 
-	script(src="libs/inputmask/inputmask.min.js")
-	script(src="js/libs.js")
-	script(src="js/common.js")
+
+	// Скрипты общие для всего сайта - Начало
+	script(src='vendors/jquery/jquery.min.js')
+	script(src='https://api-maps.yandex.ru/2.1/?lang=ru_RU&apikey=<ваш API-ключ>' type='text/javascript')
+	script(src='vendors/swiper/swiper.min.js')
+	script(src='vendors/maskinput/jquery.maskedinput.min.js')
+	script(src='vendors/fancybox/jquery.fancybox.min.js')
+	script(src='vendors/masonry/masonry.pkgd.min.js')
+	script(src='vendors/scroll/jquery.mCustomScrollbar.concat.min.js')
+	script(src='vendors/rateYo/jquery.rateyo.min.js')
+	script(src='scripts/main.js')
+	//- script(src="js/common.js")
+	// Скрипты общие для всего сайта - Конец
 	//- cut text libs
 	//- script(src="libs/jquery.morelines.min.js")
 

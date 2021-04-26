@@ -1,0 +1,208 @@
+@font-face {
+	font-family: "icons";
+	src: url("../assets/fonts/iconfonts/icons.woff2") format("woff2"),
+		url("../assets/fonts/iconfonts/icons.woff") format("woff");
+}
+[class^="icon-"], [class*="icon-"] {
+	font-family: "icons";
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	font-style: normal;
+	-webkit-font-feature-settings: normal;
+	        font-feature-settings: normal;
+	font-variant: normal;
+	font-weight: 400;
+    line-height: 1;
+	text-decoration: none;
+    text-transform: none;
+}
+
+
+.icon-1-1_arr-corner::before {
+	content: "\E001";
+}
+
+.icon-1-2_arr-down::before {
+	content: "\E002";
+}
+
+.icon-1-3_attach::before {
+	content: "\E003";
+}
+
+.icon-1-4_clock::before {
+	content: "\E004";
+}
+
+.icon-1-5_menu::before {
+	content: "\E005";
+}
+
+.icon-1-6_guarantee::before {
+	content: "\E006";
+}
+
+.icon-1-7_info::before {
+	content: "\E007";
+}
+
+.icon-1-8_shopping-cart::before {
+	content: "\E008";
+}
+
+.icon-1-9_search::before {
+	content: "\E009";
+}
+
+.icon-2-0_room::before {
+	content: "\E00A";
+}
+
+.icon-2-1_right-arrow::before {
+	content: "\E00B";
+}
+
+.icon-2-2_play-button::before {
+	content: "\E00C";
+}
+
+.icon-2-3_email::before {
+	content: "\E00D";
+}
+
+.icon-2-4_phone::before {
+	content: "\E00E";
+}
+
+.icon-2-5_catalog1::before {
+	content: "\E00F";
+}
+
+.icon-2-6_catalog2::before {
+	content: "\E010";
+}
+
+.icon-2-7_catalog3::before {
+	content: "\E011";
+}
+
+.icon-2-8_catalog4::before {
+	content: "\E012";
+}
+
+.icon-2-9_catalog5::before {
+	content: "\E013";
+}
+
+.icon-3-0_menu::before {
+	content: "\E014";
+}
+
+.icon-3-1_cross::before {
+	content: "\E015";
+}
+
+.icon-3-2_cross::before {
+	content: "\E016";
+}
+
+.icon-3-3_arr::before {
+	content: "\E017";
+}
+
+.icon-3-4_back::before {
+	content: "\E018";
+}
+
+.icon-3-5_play-button::before {
+	content: "\E019";
+}
+
+.icon-3-6_check::before {
+	content: "\E01A";
+}
+
+.icon-3-7_facebook-black::before {
+	content: "\E01B";
+}
+
+.icon-3-8_vk-black::before {
+	content: "\E01C";
+}
+
+.icon-3-9_twitter-black::before {
+	content: "\E01D";
+}
+
+.icon-4-0_lines::before {
+	content: "\E01E";
+}
+
+.icon-4-1_mosaic::before {
+	content: "\E01F";
+}
+
+.icon-4-2_mural::before {
+	content: "\E020";
+}
+
+.icon-4-3_plate::before {
+	content: "\E021";
+}
+
+.icon-4-4_sidewalk::before {
+	content: "\E022";
+}
+
+.icon-4-5_slab::before {
+	content: "\E023";
+}
+
+.icon-4-6_steps::before {
+	content: "\E024";
+}
+
+.icon-4-7_stone::before {
+	content: "\E025";
+}
+
+.icon-4-8_table::before {
+	content: "\E026";
+}
+
+.icon-4-9_zona::before {
+	content: "\E027";
+}
+
+.icon-5-0_star::before {
+	content: "\E028";
+}
+
+.icon-5-1_plus::before {
+	content: "\E029";
+}
+
+.icon-5-2_share::before {
+	content: "\E02A";
+}
+
+.icon-5-3_filter::before {
+	content: "\E02B";
+}
+
+.icon-5-4_down::before {
+	content: "\E02C";
+}
+
+.icon-5-5_stage1::before {
+	content: "\E02D";
+}
+
+.icon-5-6_stage2::before {
+	content: "\E02E";
+}
+
+.icon-5-7_stage3::before {
+	content: "\E02F";
+}
+/*# sourceMappingURL=../maps/styles/iconfonts.css.map */

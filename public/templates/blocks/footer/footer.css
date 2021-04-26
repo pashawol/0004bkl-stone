@@ -1,0 +1,282 @@
+footer {
+    margin-top: auto;
+    color: #000;
+}
+.footer{
+    background-color: var(--WoodBark);
+    background-color: var(--WoodBark);
+    padding: 53px 0 40px;
+}
+.footer ul{
+        list-style: none;
+    }
+.footer ul a{
+            font-size: 14px;
+            text-decoration: none;
+            color: var(--White);
+            color: var(--White);
+        }
+.footer__inner{
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        width: 100%;
+    }
+.footer-section{
+        font-size: 16px;
+        font-weight: 700;
+        text-transform: uppercase;
+        color: var(--Sisal);
+        color: var(--Sisal);
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+    }
+.footer-section hr{
+            margin: 20px 0 37px;
+            width: 47px;
+            height: 2px;
+            background-color: var(--Festival);
+            background-color: var(--Festival);
+        }
+.footer form input[type="text"]{
+            padding: 17px 19px 13px;
+            border-top-left-radius: 3px;
+            border-bottom-left-radius: 3px;
+            border: 1px solid var(--Soapstone);
+            border: 1px solid var(--Soapstone);
+            border-top-right-radius: 0;
+            border-bottom-right-radius: 0;
+            height: 50px
+        }
+.footer form input[type="text"]::-webkit-input-placeholder {
+    font-weight: 300;
+    font-size: 16px;
+    color: var(--Americano);
+    color: var(--Americano);
+}
+.footer form input[type="text"]::-ms-input-placeholder {
+    font-weight: 300;
+    font-size: 16px;
+    color: var(--Americano);
+    color: var(--Americano);
+}
+.footer form input[type="text"]::placeholder {
+    font-weight: 300;
+    font-size: 16px;
+    color: var(--Americano);
+    color: var(--Americano);
+}
+.footer .subscribe-wrap{
+            max-width: 330px;
+            width: 100%;
+            margin-right: auto;
+        }
+.footer .subscribe-wrap form{
+                display: -webkit-box;
+                display: -ms-flexbox;
+                display: flex;
+                -webkit-box-orient: vertical;
+                -webkit-box-direction: normal;
+                    -ms-flex-direction: column;
+                        flex-direction: column;
+            }
+.footer .subscribe-input{
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            margin-bottom: 14px;
+        }
+.footer .subscribe-input label{
+                max-width: 212px;
+                width: 100%;
+            }
+.footer .subscribe-input .bg-Festival button{
+                    height: 50.5px;
+                    font-size: 14px;
+                    margin-top: -.5px;
+                }
+.footer .subscribe-input .bg-Festival button span:last-of-type{
+                        display: none;
+                    }
+.footer-menu{
+        max-width: 212px;
+        width: 100%;
+        padding-right: 10px;
+    }
+.footer-menu li{
+            margin-bottom: 20px;
+        }
+.footer-menu a{
+            -webkit-transition: all .2s ease-out;
+            -o-transition: all .2s ease-out;
+            transition: all .2s ease-out
+        }
+.footer-menu a:hover {
+    color: var(--Nugget);
+    color: var(--Nugget);
+    -webkit-transition: all .2s ease-out;
+    -o-transition: all .2s ease-out;
+    transition: all .2s ease-out;
+}
+.footer-bottom{
+        padding: 18px 0 14px;
+        background-color: var(--Cork);
+        background-color: var(--Cork);
+        font-size: 12px;
+        font-style: italic;
+        font-weight: 300;
+        line-height: 1.33;
+        color: var(--Akaroa);
+        color: var(--Akaroa);
+    }
+.footer-bottom a{
+            text-transform: uppercase;
+            font-weight: 500;
+            font-style: normal;
+            color: currentColor;
+            margin-bottom: 5px;
+            display: block;
+        }
+.input-brim{
+    position: relative;
+    font-weight: 300;
+    color: var(--Sisal);
+    color: var(--Sisal);
+    font-size: 14px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+}
+.input-brim input{
+        margin-right: 18px
+    }
+.input-brim input[type="checkbox"] {
+    opacity: 0;
+}
+.input-brim a{
+        font-style: italic;
+        color: currentColor;
+        -webkit-transition: all .2s ease-out;
+        -o-transition: all .2s ease-out;
+        transition: all .2s ease-out
+    }
+.input-brim a:hover {
+    color: var(--Nugget);
+    color: var(--Nugget);
+    -webkit-transition: all .2s ease-out;
+    -o-transition: all .2s ease-out;
+    transition: all .2s ease-out;
+}
+.input-brim::after {
+    position: absolute;
+    content: "";
+    width: 20px;
+    height: 20px;
+    background-color: var(--White);
+    background-color: var(--White);
+    border-radius: 3px;
+    border: 1px solid var(--Soapstone);
+    border: 1px solid var(--Soapstone);
+    top: 0;
+    left: 0;
+    display: block;
+}
+.input-brim::before {
+    position: absolute;
+    font-family: "icons";
+    content: "\E01A";
+    font-size: 14px;
+    color: var(--WoodBark);
+    color: var(--WoodBark);
+    top: 3px;
+    left: 3px;
+    z-index: 1;
+    display: none;
+}
+.input-brim.active::after {
+    border-color: var(--Akaroa);
+    border-color: var(--Akaroa);
+}
+.input-brim.active::before {
+    display: block;
+}
+@media(max-width: 1250px){
+        .footer .subscribe-wrap{
+            margin-right: 20px;
+        }
+}
+@media(max-width: 1024px){
+        .footer__inner{
+            -ms-flex-wrap: wrap;
+                flex-wrap: wrap;
+        }
+        .footer .subscribe-wrap{
+            max-width: 66%;
+            margin-right: 0;
+        }
+            .footer .subscribe-wrap .input-brim{
+                max-width: 300px;
+                width: 100%;
+            }
+        .footer-menu{
+            max-width: 33%
+        }
+        .footer-menu:not(:first-of-type) {
+        margin-top: 37px;
+    }
+        .footer-menu:first-of-type, .footer-menu:last-of-type {
+        padding-left: 20px;
+        padding-right: 0;
+    }
+            .footer .subscribe-input label{
+                max-width: 280px;
+            }
+            .footer .subscribe-input input{
+                width: 100%;
+            }
+                .footer .subscribe-input .bg-Festival button{
+                    width: 162px;
+                }
+}
+@media(max-width: 575px){
+    .footer{
+        padding: 37px 0 37px;
+    }
+        .footer .subscribe-wrap{
+            max-width: 100%;
+        }
+        .footer-menu{
+            max-width: 50%
+        }
+        .footer-menu:first-of-type, .footer-menu:last-of-type {
+        padding-left: 0;
+        margin-top: 37px;
+    }
+        .footer-menu li:last-of-type {
+                margin-bottom: 0;
+    }
+            .footer-section hr{
+                margin-bottom: 30px;
+            }
+            .footer .subscribe-input label{
+                max-width: 100%;
+            }
+            .footer .subscribe-input .bg-Festival button{
+                width: 75px;
+            }
+                .footer .subscribe-input .bg-Festival button span:last-of-type{
+                    display: block;
+                }
+                .footer .subscribe-input .bg-Festival button span:first-of-type{
+                    display: none;
+                }
+}
+/*# sourceMappingURL=../../../maps/templates/blocks/footer/footer.css.map */

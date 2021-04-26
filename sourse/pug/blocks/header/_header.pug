@@ -1,5 +1,682 @@
 mixin header()
-	// start header
-	+b.HEADER.header#header&attributes(attributes)
-		block
-	// end header
+	header
+		.header
+			.header-top
+				.container
+					.flexGrid
+						.flexCell.flexCell-d-w100
+							ul.list-contacts
+								li
+									span Режим работы: 
+									|                                 с 10:00 до 22:00 (Пн-Вс)
+								li
+									span отдел продаж: 
+									a(href='tel:+84951911530') 8 (495) 191-15-30
+								li
+									span офис: 
+									a(href='tel:+74955404580') +7 (495) 540-45-80
+								li
+									span E-mail: 
+									a.v-line(href='mailTo:sale@bkl-stone.ru') sale@bkl-stone.ru
+								li
+									a.list-number(href='mailTo:sale@bkl-stone.ru')
+										i.icon-2-3_email
+									a(href='tel:+74955404580')
+										i.icon-2-4_phone
+							ul.list-contacts
+								li.rates.down
+									span $: 
+									|                                 64,01
+								li.networks
+									a(href='#')
+										img(src='assets/svg/whatsapp.svg' alt='')
+									a(href='#')
+										img(src='assets/svg/instagram.svg' alt='')
+									a(href='#')
+										img(src='assets/svg/vk.svg' alt='')
+									a(href='#')
+										img(src='assets/svg/twitter.svg' alt='')
+									a(href='#')
+										img(src='assets/svg/facebook.svg' alt='')
+			.header-center
+				.container
+					.flexGrid
+						.flexCell.flexCell-d-w100
+							.logo
+								a(href='index.html')
+									img(src='assets/images/logo.png' alt='')
+							nav.menu-wrap
+								ul.menu
+									li.menu-item
+										a(href='about.html') О НАС
+									li.menu-item
+										a(href='news.html') НОВОСТИ
+									li.menu-item
+										a(href='#') ПАРТНЕРАМ
+									li.menu-item
+										a(href='reviews.html') ОТЗЫВЫ
+									li.menu-item
+										a(href='articles.html') СТАТЬИ
+									li.menu-item.btnMenu
+										a(href='#') УСЛУГИ
+										.desc-dropdown
+											.desc-dropdown__inner
+												.container
+													.flexGrid
+														.flexCell.flexCell-d-w100
+															nav
+																ul.first-stage
+																	li.first-item
+																		p Обработка натурального камня
+																		ul.second-stage
+																			li.second-item
+																				a(href='#') Кристаллизация натурального камня
+																				ul.three-stage
+																					li
+																						a(href='#') Кристаллизация гранита
+																					li
+																						a(href='#') Кристаллизация мрамора
+																					li
+																						a(href='#') Кристаллизация травертина
+																			li.second-item
+																				a(href='#') Обработка
+																				ul.three-stage
+																					li
+																						a(href='#') Обработка гранита
+																					li
+																						a(href='#') Обработка мрамора
+																					li
+																						a(href='#') Обработка травертина
+																					li
+																						a(href='#') Обработка оникса
+																			li.second-item
+																				a(href='#') Полировка натурального камня
+																				ul.three-stage
+																					li
+																						a(href='#') Полировка гранита
+																					li
+																						a(href='#') Полировка кварцита
+																					li
+																						a(href='#') Полировка оникса
+																	li.first-item
+																		ul.second-stage
+																			li.second-item
+																				a(href='#') Резка натурального камня
+																				ul.three-stage
+																					li
+																						a(href='#') Резка гранита
+																					li
+																						a(href='#') Резка мрамора
+																					li
+																						a(href='#') Резка травертина
+																			li.second-item
+																				a(href='#') Реставрация натурального камня
+																				ul.three-stage
+																					li
+																						a(href='#') Реставрация гранита
+																					li
+																						a(href='#') Реставрация мрамора
+																					li
+																						a(href='#') Реставрация травертина
+																		p  Отделка стен натуральным камнем
+																		ul.second-stage
+																			li.second-item
+																				a(href='#') Облицовка стен гранитом
+																			li.second-item
+																				a(href='#') Облицовка стен мрамором
+																			li.second-item
+																				a(href='#') Облицовка стен ониксом с подсветкой
+																			li.second-item
+																				a(href='#') Отделка гранитом
+																			li.second-item
+																				a(href='#') Отделка стен травертином
+																			li.second-item
+																				a(href='#') Стены Bookmatch
+																	li.first-item
+																		p Облицовочные работы
+																		ul.second-stage
+																			li.second-item
+																				a(href='#') Внешняя отделка
+																			li.second-item
+																				a(href='#') Внутренняя отделка
+																			li.second-item
+																				a(href='#') Отделка ванной
+																			li.second-item
+																				a(href='#') Отделка дома гранитом
+																			li.second-item
+																				a(href='#') Отделка камина гранитом
+																			li.second-item
+																				a(href='#') Отделка квартиры
+																			li.second-item
+																				a(href='#') Отделка пола гранитом
+																			li.second-item
+																				a(href='#') Отделка фасада гранитом
+																			li.second-item
+																				a(href='#') Отделка цоколя гранитом
+																	li.first-item
+																		p Монтажные работы
+																		ul.second-stage
+																			li.second-item
+																				a(href='#') Монтаж гранита
+																			li.second-item
+																				a(href='#') Монтаж лестниц из гранита и мрамора
+																			li.second-item
+																				a(href='#') Монтаж мрамора
+																			li.second-item
+																				a(href='#') Монтаж оникса
+																			li.second-item
+																				a(href='#') Монтаж подоконников из гранита и мрамора
+																			li.second-item
+																				a(href='#') Монтаж столешниц из гранита и мрамора
+																			li.second-item
+																				a(href='#') Монтаж ступеней из гранита и мрамора
+																			li.second-item
+																				a(href='#') Укладка полов из гранита и мрамора
+									li.menu-item.btnMenu
+										a(href='#') ФОТОГАЛЕРЕЯ
+										.desc-dropdown
+											.desc-dropdown__inner
+												.container
+													.flexGrid
+														.flexCell.flexCell-d-w100
+															nav
+																ul.first-stage
+																	li.first-item
+																		p Обработка натурального камня
+																		ul.second-stage
+																			li.second-item
+																				a(href='#') Кристаллизация натурального камня
+																				ul.three-stage
+																					li
+																						a(href='#') Кристаллизация гранита
+																					li
+																						a(href='#') Кристаллизация мрамора
+																					li
+																						a(href='#') Кристаллизация травертина
+																			li.second-item
+																				a(href='#') Обработка
+																				ul.three-stage
+																					li
+																						a(href='#') Обработка гранита
+																					li
+																						a(href='#') Обработка мрамора
+																					li
+																						a(href='#') Обработка травертина
+																					li
+																						a(href='#') Обработка оникса
+																			li.second-item
+																				a(href='#') Полировка натурального камня
+																				ul.three-stage
+																					li
+																						a(href='#') Полировка гранита
+																					li
+																						a(href='#') Полировка кварцита
+																					li
+																						a(href='#') Полировка оникса
+																	li.first-item
+																		ul.second-stage
+																			li.second-item
+																				a(href='#') Резка натурального камня
+																				ul.three-stage
+																					li
+																						a(href='#') Резка гранита
+																					li
+																						a(href='#') Резка мрамора
+																					li
+																						a(href='#') Резка травертина
+																			li.second-item
+																				a(href='#') Реставрация натурального камня
+																				ul.three-stage
+																					li
+																						a(href='#') Реставрация гранита
+																					li
+																						a(href='#') Реставрация мрамора
+																					li
+																						a(href='#') Реставрация травертина
+																		p  Отделка стен натуральным камнем
+																		ul.second-stage
+																			li.second-item
+																				a(href='#') Облицовка стен гранитом
+																			li.second-item
+																				a(href='#') Облицовка стен мрамором
+																			li.second-item
+																				a(href='#') Облицовка стен ониксом с подсветкой
+																			li.second-item
+																				a(href='#') Отделка гранитом
+																			li.second-item
+																				a(href='#') Отделка стен травертином
+																			li.second-item
+																				a(href='#') Стены Bookmatch
+																	li.first-item
+																		p Облицовочные работы
+																		ul.second-stage
+																			li.second-item
+																				a(href='#') Внешняя отделка
+																			li.second-item
+																				a(href='#') Внутренняя отделка
+																			li.second-item
+																				a(href='#') Отделка ванной
+																			li.second-item
+																				a(href='#') Отделка дома гранитом
+																			li.second-item
+																				a(href='#') Отделка камина гранитом
+																			li.second-item
+																				a(href='#') Отделка квартиры
+																			li.second-item
+																				a(href='#') Отделка пола гранитом
+																			li.second-item
+																				a(href='#') Отделка фасада гранитом
+																			li.second-item
+																				a(href='#') Отделка цоколя гранитом
+									li.menu-item
+										a(href='contacts.html') КОНТАКТЫ
+							.contactMob
+								a.list-number(href='mailTo:sale@bkl-stone.ru')
+									i.icon-2-3_email
+								a(href='tel:+74955404580')
+									i.icon-2-4_phone
+							button.BtnMenu.defBtn
+								i.icon-3-0_menu
+			.header-bottom
+				.container
+					.flexGrid
+						.flexCell.flexCell-d-w100
+							.header-catalog.bg-Festival
+								a.defLink(href='catalog.html')
+									i.icon-1-5_menu
+									|                                 Каталог камня
+								ul.desc-catalog.style-catalog
+									li.btnMenu
+										a.defLink(href='#')
+											i.icon-4-7_stone
+											|                                         Каталог камня
+										ul.second-catalog
+											li
+												a.defLink(href='#') Гранит
+											li
+												a.defLink(href='#') Мрамор
+											li
+												a.defLink(href='#') Оникс
+											li
+												a.defLink(href='#') Травертин
+									li.btnMenu
+										a.defLink(href='#')
+											i.icon-2-7_catalog3
+											|                                         Назначение камня
+									li.btnMenu
+										a.defLink(href='#')
+											i.icon-4-5_slab
+											|                                         Слэбы
+									li.btnMenu
+										a.defLink(href='#')
+											i.icon-4-3_plate
+											|                                         Плитка
+									li.btnMenu
+										a.defLink(href='#')
+											i.icon-2-6_catalog2
+											|                                         Брусчатка
+									li.btnMenu
+										a.defLink(href='#')
+											i.icon-4-4_sidewalk
+											|                                         Бордюр
+									li.btnMenu
+										a.defLink(href='#')
+											i.icon-4-8_table
+											|                                         Столешницы
+									li.btnMenu
+										a.defLink(href='#')
+											i.icon-2-9_catalog5
+											|                                         Подоконники
+									li.btnMenu
+										a.defLink(href='#')
+											i.icon-2-5_catalog1
+											|                                         Изделия
+									li.btnMenu
+										a.defLink(href='#')
+											i.icon-4-6_steps
+											|                                         Ступени
+									li.btnMenu
+										a.defLink(href='#')
+											i.icon-2-8_catalog4
+											|                                         Лестницы
+									li.btnMenu
+										a.defLink(href='#')
+											i.icon-4-1_mosaic
+											|                                         Мозаика
+									li
+										a.defLink(href='#')
+											i.icon-4-2_mural
+											|                                         Панно
+							form.header-search
+								button.defBtn(type='button')
+									i.icon-1-9_search
+								input.input-bg(type='text' placeholder='Искать...')
+							.header-basket.bg-Festival.basket-empty
+								a.defLink(href='#')
+									i.icon-1-8_shopping-cart
+									|                                 вы заказали (0)
+		nav.MobileMenu.sectionMenu
+			.Mobmenu-List_wrap
+				.list-wrap
+					.Mobmenu-List
+						ul.Mobmenu-List_inner
+							li.item
+								.item__inner
+									a(href='about.html') О НАС
+							li.item
+								.item__inner
+									a(href='news.html') НОВОСТИ
+							li.item
+								.item__inner
+									a(href='#') ПАРТНЕРАМ
+							li.item
+								.item__inner
+									a(href='#') ОТЗЫВЫ
+							li.item
+								.item__inner
+									a(href='#') СТАТЬИ
+							li.item
+								.item__inner.btnDown
+									a(href='#') УСЛУГИ
+								.dropdownMobile
+									.menu-back
+										button.button-action.defBtn
+											i.icon-3-4_back
+											span Назад
+										p.section-name
+									.list-wrap
+										ul
+											li
+												.item__inner.btnDown
+													a(href='#') Обработка натурального камня
+												.dropdownMobile
+													.menu-back
+														button.button-action.defBtn
+															i.icon-3-4_back
+															span Назад
+														p.section-name
+													.list-wrap
+														ul
+															li
+																.item__inner.btnDown
+																	a(href='#') Кристаллизация натурального камня
+																.dropdownMobile
+																	.menu-back
+																		button.button-action.defBtn
+																			i.icon-3-4_back
+																			span Назад
+																		p.section-name
+																	.list-wrap
+																		ul
+																			li
+																				.item__inner
+																					a(href='#') Кристаллизация гранита
+																			li
+																				.item__inner
+																					a(href='#') Кристаллизация мрамора
+																			li
+																				.item__inner
+																					a(href='#') Кристаллизация травертина
+															li
+																.item__inner.btnDown
+																	a(href='#') Обработка
+															li
+																.item__inner.btnDown
+																	a(href='#') Полировка натурального камня
+															li
+																.item__inner.btnDown
+																	a(href='#') Резка натурального камня
+															li
+																.item__inner.btnDown
+																	a(href='#') Реставрация натурального камня
+											li
+												.item__inner.btnDown
+													a(href='#') Отделка стен натуральным камнем
+											li
+												.item__inner.btnDown
+													a(href='#') Шлифовка натурального камня
+											li
+												.item__inner.btnDown
+													a(href='#') Облицовочные работы
+											li
+												.item__inner.btnDown
+													a(href='#') Монтажные работы
+							li.item
+								.item__inner.btnDown
+									a(href='#') ФОТОГАЛЕРЕЯ
+								.dropdownMobile
+									.menu-back
+										button.button-action.defBtn
+											i.icon-3-4_back
+											span Назад
+										p.section-name
+									.list-wrap
+										ul
+											li
+												.item__inner.btnDown
+													a(href='#') Инвестиционная привлекательность
+												.dropdownMobile
+													.menu-back
+														button.button-action.defBtn
+															i.icon-3-4_back
+															span Назад
+														p.section-name
+													.list-wrap
+														ul
+															li
+																a(href='#') Акционерам
+															li
+																a(href='#') Акционерамffhffg
+											li
+												.item__inner.btnDown
+													a(href='#') Охрана труда и промышленная безопасность
+											li
+												.item__inner.btnDown
+													a(href='#') Раскрытие информации
+							li.item
+								.item__inner
+									a(href='contacts.html') КОНТАКТЫ
+						.mobMenu-bottom
+							p.elWith-Line © 2017–2019, “БКЛ-Стоун”, все права защищены.
+							.Mobmenu-bottom
+								form.Mobmenu-search
+									button.defBtn(type='button')
+										i.icon-1-9_search
+									label
+										input(type='text' placeholder='поиск')
+								.Mobmenu-networks
+									a(href='#')
+										img(src='assets/svg/whatsapp.svg' alt='')
+									a(href='#')
+										img(src='assets/svg/instagram.svg' alt='')
+									a(href='#')
+										img(src='assets/svg/vk.svg' alt='')
+									a(href='#')
+										img(src='assets/svg/twitter.svg' alt='')
+									a(href='#')
+										img(src='assets/svg/facebook.svg' alt='')
+		nav.MobileMenu.catalogMenu
+			.Mobmenu-List_wrap
+				.list-wrap
+					.Mobmenu-List
+						ul.Mobmenu-List_inner
+							li.item
+								.item__inner.btnDown
+									a(href='#')
+										i.icon-4-7_stone
+										|                                         Каталог камня
+								.dropdownMobile
+									.menu-back
+										button.button-action.defBtn
+											i.icon-3-4_back
+											span Назад
+										p.section-name
+									.list-wrap
+										ul
+											li
+												.item__inner
+													a(href='#') Для стен
+											li
+												.item__inner
+													a(href='#') Для фасада
+											li
+												.item__inner
+													a(href='#') Для цоколя
+											li
+												.item__inner
+													a(href='#') Для облицовки
+											li
+												.item__inner
+													a(href='#') Для камина
+							li.item
+								.item__inner.btnDown
+									a(href='#')
+										i.icon-2-7_catalog3
+										|                                         Назначение камня
+								.dropdownMobile
+									.menu-back
+										button.button-action.defBtn
+											i.icon-3-4_back
+											span Назад
+										p.section-name
+									.list-wrap
+										ul
+											li
+												.item__inner
+													a(href='#') Для ванной
+											li
+												.item__inner
+													a(href='#') Для камина
+											li
+												.item__inner
+													a(href='#') Для кухни
+											li
+												.item__inner
+													a(href='#') Для стен
+											li
+												.item__inner
+													a(href='#') Для фасада
+											li
+												.item__inner
+													a(href='#') Для цоколя
+											li
+												.item__inner
+													a(href='#') Для облицовки
+							li.item
+								.item__inner.btnDown
+									a(href='#')
+										i.icon-4-5_slab
+										|                                         Слэбы
+							li.item
+								.item__inner.btnDown
+									a(href='#')
+										i.icon-4-3_plate
+										|                                         Плитка
+							li.item
+								.item__inner
+									a(href='#')
+										i.icon-2-6_catalog2
+										|                                         Брусчатка
+							li.item
+								.item__inner.btnDown
+									a(href='#')
+										i.icon-4-4_sidewalk
+										|                                         Бордюр
+								.dropdownMobile
+									.menu-back
+										button.button-action.defBtn
+											i.icon-3-4_back
+											span Назад
+										p.section-name
+									.list-wrap
+										ul
+											li
+												.item__inner
+													a(href='#') Обработка натурального камня
+											li
+												.item__inner
+													a(href='#') Отделка стен натуральным камнем
+											li
+												.item__inner
+													a(href='#') Шлифовка натурального камня
+											li
+												.item__inner
+													a(href='#') Облицовочные работы
+											li
+												.item__inner
+													a(href='#') Монтажные работы
+											li
+												p.elWith-Line © 2017–2019, “БКЛ-Стоун”, все права защищены.
+							li.item
+								.item__inner.btnDown
+									a(href='#')
+										i.icon-4-8_table
+										|                                     Столешницы
+								.dropdownMobile
+									.menu-back
+										button.button-action.defBtn
+											i.icon-3-4_back
+											span Назад
+										p.section-name
+									.list-wrap
+										ul
+											li
+												.item__inner
+													a(href='#') Инвестиционная привлекательность
+											li
+												.item__inner
+													a(href='#') Охрана труда и промышленная безопасность
+											li
+												.item__inner
+													a(href='#') Раскрытие информации
+											li
+												p.elWith-Line © 2017–2019, “БКЛ-Стоун”, все права защищены.
+							li.item
+								.item__inner
+									a(href='#')
+										i.icon-2-9_catalog5
+										|                                         Подоконники
+							li.item
+								.item__inner
+									a(href='#')
+										i.icon-2-5_catalog1
+										|                                         Изделия
+							li.item
+								.item__inner
+									a(href='#')
+										i.icon-4-6_steps
+										|                                         Ступени
+							li.item
+								.item__inner
+									a(href='#')
+										i.icon-2-8_catalog4
+										|                                         Лестницы
+							li.item
+								.item__inner
+									a(href='#')
+										i.icon-4-1_mosaic
+										|                                         Мозаика
+							li.item
+								.item__inner
+									a(href='#')
+										i.icon-4-2_mural
+										|                                         Панно
+						.mobMenu-bottom
+							p.elWith-Line © 2017–2019, “БКЛ-Стоун”, все права защищены.
+							.Mobmenu-bottom
+								form.Mobmenu-search
+									button.defBtn(type='button')
+										i.icon-1-9_search
+									label
+										input(type='text' placeholder='поиск')
+								.Mobmenu-networks
+									a(href='#')
+										img(src='assets/svg/whatsapp.svg' alt='')
+									a(href='#')
+										img(src='assets/svg/instagram.svg' alt='')
+									a(href='#')
+										img(src='assets/svg/vk.svg' alt='')
+									a(href='#')
+										img(src='assets/svg/twitter.svg' alt='')
+									a(href='#')
+										img(src='assets/svg/facebook.svg' alt='')
