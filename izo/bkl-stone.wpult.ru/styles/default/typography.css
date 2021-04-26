@@ -1,0 +1,89 @@
+.typography .h1, .typography .h2, .typography .h3, .typography .h4, .typography .h5, .typography .h6, .typography h1, .typography h2, .typography h3, .typography h4, .typography h5, .typography h6 {
+        margin-bottom: 8px;
+        font-family: inherit;
+        font-weight: 500;
+        line-height: 1.2;
+        color: inherit;
+    }
+    .typography h1 {
+        font-size: 40px;
+    }
+    .typography h2 {
+        font-size: 32px;
+    }
+    .typography h3 {
+        font-size: 28px;
+    }
+    .typography h4 {
+        font-size: 24px;
+    }
+    .typography h5 {
+        font-size: 20px;
+    }
+    .typography h6 {
+        font-size: 16px;
+    }
+    .typography p {
+        margin-top: 0;
+        margin-bottom: 16px;
+        line-height: 26px;
+        font-weight: 300;
+    }
+    .typography a {
+        display: inline-block;
+        color: var(--Tobago);
+        color: var(--Tobago);
+        -webkit-transition: all .4s ease-out;
+        -o-transition: all .4s ease-out;
+        transition: all .4s ease-out
+    }
+    .typography a:hover, .typography a.link-underStyle:hover {
+        color: var(--Nugget);
+        color: var(--Nugget);
+        -webkit-transition: all .4s ease-out;
+        -o-transition: all .4s ease-out;
+        transition: all .4s ease-out;
+}
+    .typography a.link-underStyle {
+        font-weight: 300;
+        font-size: 14px;
+        color: #73655c;
+        text-decoration: none;
+}
+    .typography a.link-underStyle::after {
+        bottom: -2px;
+}
+    .typography mark {
+        padding: .2em;
+        background-color: #fcf8e3;
+    }
+    .typography small {
+        font-size: 80%;
+        font-weight: 400;
+    }
+    .typography b, .typography strong {
+        font-weight: 700;
+        line-height: 26px;
+        margin-bottom: 25px;
+        display: block;
+    }
+    .typography blockquote {
+        margin: 0 0 16px;
+    }
+    .typography dl, .typography ol, .typography ul {
+        margin-top: 0;
+        margin-bottom: 16px;
+    }
+    .typography ol ol, .typography ol ul, .typography ul ol, .typography ul ul {
+        margin-bottom: 0;
+        font-weight: 300;
+    }
+    .typography ul {
+        list-style-position: inside;
+        list-style: none;
+        line-height: 26px;
+    }
+    .typography table {
+        border-collapse: collapse;
+    }
+/*# sourceMappingURL=../../maps/styles/default/typography.css.map */

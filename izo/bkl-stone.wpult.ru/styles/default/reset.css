@@ -1,0 +1,111 @@
+*,
+*::before,
+*::after {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
+}
+
+html, body, div, span, h1, h2, h3, h4, h5, h6, p, a, ul, li {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+}
+html{
+    font-size: var(--mainSize);
+    font-size: var(--mainSize);
+}
+body {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    font-size: var(--mainSize);
+    font-size: var(--mainSize);
+    font-family: var(--mainFont);
+    font-family: var(--mainFont);
+    font-weight: 400;
+    line-height: 1;
+    color: var(--mainColor);
+    color: var(--mainColor);
+    background-color: #fff;
+    overflow-x: hidden;
+} 
+.body__inner{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: 100%;
+    overflow-x: hidden;
+    min-height: 100vh;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+.defLink {
+    display: block;
+    text-decoration: none;
+    outline: none
+}
+
+.defLink:focus, .defLink:active {
+    color: currentColor;
+}
+
+.defBtn {
+    padding: 0;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+input[type="search"]::-webkit-search-cancel-button {
+    display: none;
+}
+
+input[type="search"]::-ms-clear {
+    display: none;
+}
+
+input[type="number"] {
+    -moz-appearance: textfield;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+textarea {
+    resize: none;
+}
+
+button, input, textarea {
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: inherit;
+    border: none;
+    outline: none;
+}
+
+hr {
+    display: block;
+    width: 100%;
+    height: 1px;
+    padding: 0;
+    margin: 0;
+    background-color: var(--mainColor);
+    background-color: var(--mainColor);
+    border: none;
+}
+.mb-16{
+    margin-bottom: 1rem;
+}
+/*# sourceMappingURL=../../maps/styles/default/reset.css.map */

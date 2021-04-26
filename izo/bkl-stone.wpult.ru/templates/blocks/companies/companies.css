@@ -1,0 +1,13 @@
+.companies-stages{
+    background: url("../assets/images/companies-stages-fon.jpg") no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    padding-top: 73px;
+    overflow: hidden;
+}
+    .companies-stages .stages-project::after{
+    background: url("../assets/images/block-el2.png") no-repeat;
+    background-position: right;
+    bottom: -24px;
+}
+/*# sourceMappingURL=../../../maps/templates/blocks/companies/companies.css.map */

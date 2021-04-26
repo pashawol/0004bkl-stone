@@ -1,0 +1,91 @@
+.card-desc-style{
+    background-color: var(--Cork);
+    background-color: var(--Cork);
+}
+    .card-desc-style .accordion__btn{
+            font-size: 14px;
+            font-weight: 500;
+            color: var(--White);
+            color: var(--White);
+            text-transform: uppercase;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-align: end;
+                -ms-flex-align: end;
+                    align-items: flex-end;
+            padding: 9px 30px 13px;
+            -webkit-box-pack: justify;
+                -ms-flex-pack: justify;
+                    justify-content: space-between;
+            -webkit-transition: all .4s ease-out;
+            -o-transition: all .4s ease-out;
+            transition: all .4s ease-out
+            
+        }
+    .card-desc-style .accordion__btn:hover{
+    background-color: var(--WoodBark);
+    background-color: var(--WoodBark);
+    -webkit-transition: all .4s ease-out;
+    -o-transition: all .4s ease-out;
+    transition: all .4s ease-out;
+}
+    .card-desc-style .accordion__body{
+            background-color: var(--White);
+            background-color: var(--White);
+            display: none;
+        }
+.accordion__btn button{
+                padding-right: 18px;
+                position: relative;
+            }
+.accordion__btn button span{
+                    font-size: 12px;
+                    color: var(--AlbescentWhite);
+                    color: var(--AlbescentWhite);
+                    text-transform: uppercase;
+                    border-bottom: 1px dashed currentColor;
+                    -webkit-transition: all .4s ease-out;
+                    -o-transition: all .4s ease-out;
+                    transition: all .4s ease-out;
+                }
+.accordion__btn button .close{
+                    display: none;
+                }
+.accordion__btn button::after{
+    position: absolute;
+    font-family: "icons";
+    content: "\E001";
+    font-size: 10px;
+    right: 0;
+    bottom: 1px;
+    color: var(--Galliano);
+    color: var(--Galliano);
+}
+.accordion__btn button:hover span{
+                        color: var(--GoldenBrown);
+                        color: var(--GoldenBrown);
+                        -webkit-transition: all .4s ease-out;
+                        -o-transition: all .4s ease-out;
+                        transition: all .4s ease-out;
+}
+.accordion__btn.active button::after{
+    -webkit-transform: rotate(-90deg);
+            transform: rotate(-90deg);
+}
+.accordion__btn.active button span{
+                        display: none;
+}
+.accordion__btn.active button span.close{
+    display: inline;
+}
+.accordion:not(:last-of-type){
+    margin-bottom: 10px;
+}
+@media(max-width: 575px){
+        .card-desc-style .accordion__btn{
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+}
+/*# sourceMappingURL=../../../maps/templates/blocks/accordions/accordions.css.map */
