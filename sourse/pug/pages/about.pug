@@ -1,0 +1,58 @@
+extends layout/main.pug
+
+
+include ../blocks/sContent/_sContent.pug
+include ../blocks/sContact/_sContact.pug
+include ../blocks/mainSlider/_mainSlider.pug
+include ../blocks/blockCatalog/_blockCatalog.pug
+include ../blocks/advantage/_advantage.pug
+include ../blocks/production/_production.pug
+include ../blocks/blockWithVideo/_blockWithVideo.pug
+include ../blocks/sliderGallery/_sliderGallery.pug
+include ../blocks/ourClients/_ourClients.pug
+include ../blocks/servicesTabs/_servicesTabs.pug
+include ../blocks/blockWork/_blockWork.pug
+include ../blocks/blockNews/_blockNews.pug
+include ../blocks/interestingFacts/_interestingFacts.pug
+include ../blocks/blockText/_blockText.pug
+include ../blocks/blockContacts/_blockContacts.pug
+include ../blocks/breadcrumbs/_breadcrumbs.pug
+
+block variables
+	- let  mainPage= null
+	- let  bg= null
+
+block title
+	- let  title= 'О компании'
+	title= title
+block pagecontent
+	
+
+	//- +mob-mnu()
+	+header()
+	+breadcrumbs({
+		items: [
+			{title}
+		]
+	})
+	//- +mainSlider()
+	//- +blockCatalog()
+	//- +advantage()
+	//- +production()
+	//- +blockWithVideo()
+	//- +sliderGallery()
+	//- +ourClients()
+	//- +servicesTabs()
+	//- +blockWork()
+	//- +blockNews()
+	//- +interestingFacts()
+	//- +blockText()
+	//- +blockContacts()
+	//- +top-nav()
+	//- +soc()
+	//- +topLine()
+	//- +headerBlock()
+	//- +sForm()
+	//- +sContact()
+	+footer()
+	

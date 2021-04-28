@@ -1,0 +1,13 @@
+mixin breadcrumbs(data)
+	section.breadcrumbs
+		.container
+			.flexGrid
+				.flexCell.flexCell-d-w100
+					.breadcrumbs__inner
+						a.defLink(href='index.html') Главная
+						each item in data.items
+							if item.link
+								a.defLink(href=item.link)= item.title
+							else
+								span!= item.title
+	// end breadcrumbs
