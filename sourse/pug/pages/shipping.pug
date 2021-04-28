@@ -17,6 +17,8 @@ extends layout/main.pug
 //- include ../blocks/blockText/_blockText.pug
 //- include ../blocks/blockContacts/_blockContacts.pug
 include ../blocks/breadcrumbs/_breadcrumbs.pug
+include ../blocks/ourClients/_ourClients.pug
+include ../blocks/blockContacts/_blockContacts.pug
 
 block variables
 	- let  mainPage= null
@@ -35,6 +37,8 @@ block pagecontent
 			{title}
 		]
 	})
+	+ourClients()
+	+blockContacts()
 	//- +mainSlider()
 	//- +blockCatalog()
 	//- +advantage()
