@@ -1,0 +1,169 @@
+// start .sShipingPrice
+.sShipingPrice {
+		// --sPT: ;
+		// --sPB: ;
+		// --sTPB: ;
+	.section-title{
+		padding-bottom: rem(40);
+	}
+	p{
+		margin-bottom: rem(20);
+	}
+	&__row{
+		--bs-gutter-x: #{rem(24)};
+		padding-bottom: 6px;
+	}
+	&__icon-wrap{
+		img{
+			margin-left: auto;
+			margin-right: auto;
+		}
+		@include media-breakpoint-up(xl) {
+			width: 60px;
+			margin-bottom: 0;
+		}
+		margin-bottom: rem(20);
+		text-align: center;
+		// margin-right: rem(20);
+	}
+	&__text{
+		text-align: center;
+		@include media-breakpoint-up(sm) {
+			font-size: rem(20);
+		}
+		font-weight: bold;
+		flex-grow: 1;
+		@include media-breakpoint-up(xl) {
+			padding: rem(10);
+			padding-right: 0;
+		}
+
+	}
+	&__item{
+		min-height: calc(100% );
+		// margin-bottom: 30px;
+		background: #F9F8F4;
+		position: relative;
+		z-index: 2;
+		@include media-breakpoint-up(xl) {
+
+			display: flex;
+			align-items: center;
+			min-height: 100px;
+		}
+		padding: 20px;
+		text-align: center;
+		&::before{
+			content: '';
+			// @include block;
+			position: absolute;
+			background: linear-gradient(90deg, #F7F5ED 0%, #E9E7DE 100%);
+			height: 100%;
+			width: 100px;
+			right: 0;
+			top: 0;
+			bottom: 0;
+			clip-path: polygon(100% 0, 0% 100%, 100% 100%);
+			z-index: -1;
+		}
+	}
+	table{
+		width: 100%;
+		font-weight: 500;
+		border-spacing: 0;
+	}
+	thead{
+		font-weight: 500;
+		// text-align: center;
+	}
+	th{
+		background: #BCB29A;
+		text-transform: uppercase;
+		border-bottom: 1px solid #E6E2D8;
+		&:not(:last-child){
+			border-right: 1px solid #E6E2D8;
+		}
+	}
+	th,
+	td{
+		vertical-align: middle;
+		padding: rem(20) rem(10);
+	}
+	[colspan="6"] {
+		padding: rem(12) rem(10);
+		background: #574C45;
+		color: #fff;
+		border: none;
+	}
+	&__table-wrap{
+		overflow-x: auto;
+		position: relative;
+		margin-bottom: 1rem;
+	}
+	table{
+		min-width: 1200px;
+		border: 1px solid #E6E2D8;
+		border-bottom: none;
+	}
+	tbody{
+		font-size: 18px;
+		th{
+			width: 94px;
+			background: #574C45;
+
+		}
+		tr:nth-child(odd) {
+			background: #F9F8F4;
+
+		}
+		td{
+			height: 100px;
+			text-align: center;
+			span{
+				max-width: 180px;
+				font-weight: normal;
+				display: block;
+			}
+			&:nth-child(1){
+			}
+			&:nth-child(1),
+			&:nth-child(2){
+				padding-left: rem(24);
+			}
+		}
+		th,
+		td{
+			border-bottom: 1px solid #E6E2D8;
+			&:not(:last-child){
+				border-right: 1px solid #E6E2D8;
+			}
+		}
+	}
+	[rowspan="2"]{
+		@include media-breakpoint-up(lg) {
+			padding-left: 20px;
+		}
+	}
+	@include media-breakpoint-down(xl) {
+		tbody th {
+			&:first-child{
+
+				width: 0;
+				padding: 0;
+			}
+		}
+	}
+	&__text{
+		margin-left: auto;
+		margin-right: auto;
+		max-width: rem(940);
+		font-weight: 300;
+	}
+	@include media-breakpoint-up(xl) {}
+	@include media-breakpoint-up(lg) {}
+	@include media-breakpoint-up(md) {}
+	@include media-breakpoint-up(sm) {}
+	@include media-breakpoint-between(md, xl) {}
+	@include media-breakpoint-only(xl) {}
+	@include media-breakpoint-down(xl) {}
+} // end.sShipingPrice

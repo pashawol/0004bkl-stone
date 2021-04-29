@@ -1,0 +1,22 @@
+mixin sShipingServises(data)
+	// start sShipingServises
+	+b.sShipingServises.section#sShipingServises&attributes(attributes)
+		.container
+			mixin item(i,t,p)
+				+e.item.typography
+					.roww.gx-0
+						+e.slider--js.swiper-container 
+							.swiper-wrapper
+								+e.slide.swiper-slide
+									img(src="img/@2x/ship-1.jpg", alt="")
+								+e.slide.swiper-slide
+									img(src="img/@2x/ship-2.jpg", alt="")
+							.swiper-pagination
+						+e.caption.col
+							h2= t
+							p!= p
+				// /+e.item
+			+item(`1`,`Упаковка`,`Изготавливается под габарит конкретных изделий по&nbsp;специальным требованиям, что&nbsp;бы изделия не&nbsp;деформировалось. Одну упаковку по&nbsp;весу стараются делать не&nbsp;более&nbsp;1т.`)
+			
+			+item(`2`,`Пирамида`,`Служит для перевозки слэбов, а&nbsp;так&nbsp;же изделий длинной формы. С&nbsp;неё легко снять изделия, но&nbsp;в&nbsp;не&nbsp;большом кол-ве, так как разгрузка с&nbsp;борта в&nbsp;ручную может повлечь повреждение изделий.`)
+	// end sShipingServises

@@ -1,0 +1,57 @@
+mixin sShipingPrice(data)
+	// start sShipingPrice
+	+b.SECTION.sShipingPrice.section#sShipingPrice&attributes(attributes)
+		.container
+			+b.section-title
+				h2 Стоимость доставки 
+				span Лаборатории Камня «BKL Stone»
+				hr
+			p На стоимость доставки могут влиять несколько факторов:
+			+e.row.roww
+				mixin item(i,t)
+					.col-lg-3.col-6
+						+e.item 
+							+e.icon-wrap: img.res-i(src=`img/svg/sShipingPrice-${i}.svg`, alt="")
+							+e.text= t
+				+item(`1`,`Условия задания`)
+				+item(`2`,`Количество упаковок`)
+				+item(`3`,`Общий вес`)
+				+item(`4`,`Километраж`)
+			+e.table-wrap
+				table
+					thead 
+						tr 
+							th(colspan="2" rowspan="2").text-start Машина
+							th(rowspan="2").text-start по Москве
+							th(colspan="6").text-center За Мкад
+						tr 
+							//- th 
+							//- th
+							th до 20 км
+							th 20-40 км
+							th 40-60 км
+							th 60-80 км
+							th 80-100 км
+							th.text-start > 100 км
+					tbody 
+						mixin tr(t1,t2,t3,t4,t5,t6,t7,t8)
+							tr
+								th
+								td.text-start
+									span= t1
+								td.text-start 6 500 ₽
+								td 7 500 ₽
+								td 8 500 ₽
+								td 9 500 ₽
+								td 10 500 ₽
+								td 11 500 ₽
+								td.text-start.fw-400 По договоренности
+						+tr(`Газель или портер  до 1,5Т` )
+
+						+tr(`Газель до 3Т`)
+
+						+tr(`Манипулятор 5Т`)
+
+						+tr(`Манипулятор 10Т`)
+			+e.text При доставке заказов погрузка осуществляется нашими силами. Разгрузка также происходит нашими силами и данная работа входит в стоимость услуг при расчёте заказа
+	// end sShipingPrice

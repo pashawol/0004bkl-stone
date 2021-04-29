@@ -19,6 +19,10 @@ extends layout/main.pug
 include ../blocks/breadcrumbs/_breadcrumbs.pug
 include ../blocks/ourClients/_ourClients.pug
 include ../blocks/blockContacts/_blockContacts.pug
+include ../blocks/Main-title/_Main-title.pug
+include ../blocks/sShipingServises/_sShipingServises.pug
+include ../blocks/sShipingPrice/_sShipingPrice.pug
+include ../blocks/sWorlds/_sWorlds.pug
 
 block variables
 	- let  mainPage= null
@@ -37,6 +41,12 @@ block pagecontent
 			{title}
 		]
 	})
+	+Main-title()
+	+sShipingServises
+	+sShipingPrice()
+	+sWorlds
+
+
 	+ourClients()
 	+blockContacts()
 	//- +mainSlider()
