@@ -1,0 +1,133 @@
+// start .sPriceTable
+.sPriceTable {
+		// --sPT: ;
+		// --sPB: ;
+		// --sTPB: ;
+		background: #F9F8F4;
+		padding-top: 60px;
+		padding-bottom: 60px;
+	.section-title{
+		margin-bottom: 40px;
+	}
+	.tabs{
+			&__caption{
+				display: flex; 
+				margin-bottom: 30px;
+			}
+			&__btn{
+				margin-right: 40px;
+				display: inline-block;
+				cursor: pointer;
+				font-weight: 500;
+				text-transform: uppercase;
+				font-size: 18px;
+				color: #C18E1D;
+				border-bottom: 1px dashed;
+				&:hover{
+					border-color: transparent;
+				}
+				&.active{
+					color: #362A24;
+					border-color: transparent;
+
+				}
+			}
+		}
+		.tabs__btn-accordion{
+				--btn-h: 50px;
+				text-transform: uppercase;
+				@include media-breakpoint-up(lg) {
+
+					display: none;
+				}
+				// display: block;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+		}
+
+		&__table-wrap{
+			overflow-x: auto;
+			position: relative;
+		}
+		table{
+			width: 100%;
+			text-align: left;
+			border-spacing: 0;
+			min-width: 800px;
+		}
+		thead{
+			th{
+
+				padding-top: 10px;
+				padding-bottom: 10px;
+				color: #fff;
+				background: #574C45;
+				text-transform: uppercase;
+				font-weight: 500;
+			}
+		}
+		
+		th,
+		td{
+			padding-left: 30px;
+			padding-right: 10px;
+			
+		}
+		tbody{
+			th,
+			td{
+				padding-left: 30px;
+				padding-right: 10px;
+				border-bottom: 1px solid #E3DDCD;
+				height: 70px;
+				font-weight: normal;
+				&:first-child{
+					border-left: 1px solid #E3DDCD;
+				}
+				&:last-child{
+					border-right: 1px solid #E3DDCD;
+				}
+				
+			}
+
+		}
+		line-height: (26 / 16);
+		&__footer{
+			color: #fff;
+			background: #574C45;
+			padding: 30px;
+			p{
+				margin-bottom: rem(30);
+			}
+			strong{
+				text-transform: uppercase;
+				span{
+					color: $primary;
+				}
+			}
+		}
+		&__btn{
+			width: 100%;
+			max-width: 298px;
+			padding: rem(10);
+			text-transform: uppercase;
+			--btn-h: 50px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+		.tabs__caption{
+			@include media-breakpoint-down(lg) {
+				display: none;
+			}
+
+		}
+	@include media-breakpoint-up(xl) {}
+	@include media-breakpoint-up(lg) {}
+	@include media-breakpoint-up(md) {}
+	@include media-breakpoint-up(sm) {}
+	@include media-breakpoint-between(md, xl) {}
+	@include media-breakpoint-only(xl) {}
+	@include media-breakpoint-down(xl) {}
+} // end.sPriceTable

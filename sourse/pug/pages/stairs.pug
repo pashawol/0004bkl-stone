@@ -19,6 +19,9 @@ include ../blocks/breadcrumbs/_breadcrumbs.pug
 include ../blocks/ourClients/_ourClients.pug
 include ../blocks/blockContacts/_blockContacts.pug
 include ../blocks/ourWorks/_ourWorks.pug
+include ../blocks/sCooperations/_sCooperations.pug
+include ../blocks/sCards/_sCards.pug
+include ../blocks/sSteps/_sSteps.pug
 
 block variables
 	- let  mainPage= null
@@ -37,10 +40,24 @@ block pagecontent
 			{title}
 		]
 	})
-	+blockCatalog() 
+	
+	+b.page-head 
+		.container 
+			.roww
+				+e.col.col-md-auto
+					.section-title 
+						h1  Лестницы 
+						span из натурального камня
+						hr
+				.col
+					p Существует много разных вариантов лестниц, но когда вы думаете как создать себе роскошный, долговечный и неповторимый дизайн, то стоит обратить внимание на природные материалы. Из мрамора, гранита, оникса и травертина, можно создать лестницы как для жилых зданий, так и для офисных помещений, как для наружных, так и для внутренних отделок.
+	+sCards
+	+sSteps
+		+blockCatalog() 
 				//-blockCatalog почти то что нужно, но требует корректив
 	//- +ourClients()
 	+blockWork()
+	+sCooperations
 	+ourWorks().article-our-works
 				//- на .article-our-works висят паддинги в изначальной верстке
 	+blockContacts()

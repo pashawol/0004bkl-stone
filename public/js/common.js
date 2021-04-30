@@ -8,13 +8,56 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 
 var $ = jQuery;
 
+function tabscostume(tab) {
+	var tabs = document.querySelectorAll(tab); // const indexOf = element => Array.from(element.parentNode.children).indexOf(element);
+
+	tabs.forEach(function (element) {
+		var tabs = element;
+		var tabsCaption = tabs.querySelector(".tabs__caption");
+		var tabsBtn = tabsCaption.querySelectorAll(".tabs__btn");
+		var tabsWrap = tabs.querySelector(".tabs__wrap");
+		var tabsContent = tabsWrap.querySelectorAll(".tabs__content");
+		var random = Math.trunc(Math.random() * 1000);
+		tabsBtn.forEach(function (el, index) {
+			var data = "tab-content-".concat(random, "-").concat(index);
+			el.dataset.tabBtn = data;
+			var content = tabsContent[index];
+			content.dataset.tabContent = data;
+			if (!content.dataset.tabContent == data) return;
+			var active = content.classList.contains('active') ? 'active' : ''; // console.log(el.innerHTML);
+
+			content.insertAdjacentHTML("beforebegin", "<div class=\"tabs__btn-accordion  btn btn-primary  mb-1 ".concat(active, "\" data-tab-btn=\"").concat(data, "\">").concat(el.innerHTML, "</div>"));
+		});
+		tabs.addEventListener('click', function (element) {
+			var btn = element.target.closest("[data-tab-btn]:not(.active)");
+			if (!btn) return;
+			var data = btn.dataset.tabBtn;
+			var tabsAllBtn = this.querySelectorAll("[data-tab-btn");
+			var content = this.querySelectorAll("[data-tab-content]");
+			tabsAllBtn.forEach(function (element) {
+				element.dataset.tabBtn == data ? element.classList.add('active') : element.classList.remove('active');
+			});
+			content.forEach(function (element) {
+				element.dataset.tabContent == data ? (element.classList.add('active'), element.previousSibling.classList.add('active')) : element.classList.remove('active');
+			});
+		});
+	}); // $('.' + tab + '__caption').on('click', '.' + tab + '__btn:not(.active)', function (e) {
+	// 	$(this)
+	// 		.addClass('active').siblings().removeClass('active')
+	// 		.closest('.' + tab).find('.' + tab + '__content').hide().removeClass('active')
+	// 		.eq($(this).index()).fadeIn().addClass('active');
+	// });
+}
+
 function eventHandler() {
 	var _defaultSl;
 
+	tabscostume('.tabs--js');
 	var defaultSl = (_defaultSl = {
 		spaceBetween: 0,
 		lazy: {
-			loadPrevNext: true
+			loadPrevNext: true,
+			loadPrevNextAmount: 6
 		},
 		watchOverflow: true
 	}, _defineProperty(_defaultSl, "spaceBetween", 0), _defineProperty(_defaultSl, "loop", true), _defaultSl); // document.querySelector
@@ -32,8 +75,36 @@ function eventHandler() {
 				}
 			}));
 		});
-	} // modal window
+	}
 
+	var swiper = new Swiper('.sGal__slider--js', _objectSpread(_objectSpread({}, defaultSl), {}, {
+		effect: 'coverflow',
+		grabCursor: true,
+		centeredSlides: true,
+		slidesPerView: 'auto',
+		coverflowEffect: {
+			rotate: 0,
+			stretch: 560,
+			depth: 200,
+			modifier: 1,
+			slideShadows: false
+		},
+		navigation: {
+			nextEl: '.sGal .swiper-button-next',
+			prevEl: '.sGal .swiper-button-prev'
+		},
+		pagination: {
+			el: '.sGal .swiper-pagination'
+		}
+	}));
+	var swiper33 = new Swiper('.sProjectMaterials__slider--js', _objectSpread(_objectSpread({}, defaultSl), {}, {
+		spaceBetween: 24,
+		slidesPerView: 'auto',
+		navigation: {
+			nextEl: '.sProjectMaterials .swiper-button-next',
+			prevEl: '.sProjectMaterials .swiper-button-prev'
+		}
+	})); // modal window
 }
 
 ;

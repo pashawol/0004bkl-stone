@@ -1,0 +1,25 @@
+mixin sCooperations(data)
+	// start sCooperations
+	+b.SECTION.sCooperations.section#sCooperations&attributes(attributes)
+		.container
+			+b.section-title
+				h2 Что мы предлагаем
+				span Выгодное сотрудничество
+				hr
+		.roww
+			mixin item(i,t,p)
+				+e.col.col-xl-4 
+					.roww
+						.col-xl-12.col-md-auto
+							+pic(`sCooperations-${i}.jpg`,'bg',0)
+						.col-xl-12.col
+							+e.caption
+								+e.title= t
+								p= p
+				// /+e.col.col-lg-4
+			+item(`1`,`Архитекторам и дизайнерам`,`Только лучшие условия сотрудничества с архитекторами и дизайнерами от BLK Stone. Мы будем рады помочь с реализацией вашего проекта, поэтому нас выбрали уже сотни дизайнеров и архитекторов по всей России. Выбирайте только лучшее с нашей компанией BLK STone!`)
+			
+			+item(`2`,`Строительным компаниям`,`Лучшие условия сотрудничества со строительными компаниями от BLK Stone, которые вам очень понравятся. Выбирайте только лучшее от нашей компании`)
+			
+			+item(`3`,`Частным лицам и конечному клиенту`,`Лучшие условия сотрудничества с частными лицами от BLK Stone, которые вам очень понравятся. Выбирайте только лучшее!`)
+	// end sCooperations

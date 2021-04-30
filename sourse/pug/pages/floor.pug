@@ -19,6 +19,9 @@ include ../blocks/breadcrumbs/_breadcrumbs.pug
 include ../blocks/ourClients/_ourClients.pug
 include ../blocks/blockContacts/_blockContacts.pug
 include ../blocks/ourWorks/_ourWorks.pug
+include ../blocks/sCooperations/_sCooperations.pug
+include ../blocks/sCards/_sCards.pug
+include ../blocks/sSteps/_sSteps.pug
 
 block variables
 	- let  mainPage= null
@@ -37,10 +40,25 @@ block pagecontent
 			{title}
 		]
 	})
-	+blockCatalog() 
+
+	+b.page-head 
+		.container 
+			.roww
+				+e.col.col-md-auto
+					.section-title 
+						h1  Полы
+
+						span из натурального камня
+						hr
+				.col
+					p Полы из натурального камня имеют неоспоримой преимущество среди других напольных покрытий. Они прочны и долговечны, не горят, не подвержены гниению и климатическому или атмосферному воздействию, не требуют ремонта и окраски.
+	+sCards2
+	+sSteps2
+		+blockCatalog() 
 			//-blockCatalog !!! почти то что нужно, но требует корректив
 	//- +ourClients()
 	+blockWork()
+	+sCooperations
 	+ourWorks().article-our-works
 			//- надо сделать белый фон
 			//- на .article-our-works висят паддинги в изначальной верстке

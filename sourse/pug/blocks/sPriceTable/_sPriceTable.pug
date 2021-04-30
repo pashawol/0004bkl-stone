@@ -1,0 +1,57 @@
+mixin sPriceTable(data)
+	// start sPriceTable
+	+b.SECTION.sPriceTable.section#sPriceTable&attributes(attributes)
+		.container
+			+b.section-title
+				h2 Стоимость услуг
+				span гидроабразивной резки
+				hr
+			.tabs.tabs--js
+				.tabs__caption 
+					.tabs__btn.active Камень
+					.tabs__btn Керамика
+					.tabs__btn Металл
+					.tabs__btn Стекло
+					.tabs__btn Пластик и прочее
+				.tabs__wrap 
+					mixin c()
+						.tabs__content&attributes(attributes)
+							+e.table-wrap
+								table 
+									thead 
+										tr 
+											th(scope="col") Материал
+											th(scope="col") 5 мм
+											th(scope="col") 7 мм
+											th(scope="col") 10 мм
+											th(scope="col") 15 мм
+											th(scope="col") 20 мм
+											th(scope="col") 30 мм
+									tbody 
+										mixin tr(t1,t2,t3,t4,t5,t6,t7)
+											tr 
+												th(scope="row"  )= t1
+												td( )= t2
+												td(  )= t3
+												td(  )= t4
+												td( )= t5
+												td( )= t6
+												td( )= t7
+										+tr(`Гранит`,`—`,`—`,`400 ₽`,`750 ₽`,`1 200 ₽`,`1 500 ₽`)
+										+tr(`Мрамор`,`—`,`—`,`300 ₽`,`600 ₽`,`750 ₽`,`1 200 ₽`)
+										+tr(`Керамика`,`—`,`—`,`400 ₽`,`750 ₽`,`1 200 ₽`,`1 500 ₽`)
+										+tr(`Плитка`,`—`,`—`,`300 ₽`,`600 ₽`,`750 ₽`,`1 200 ₽`)
+					+c().active
+					+c()
+					+c()
+					+c()
+					+c()
+					+e.footer 
+						p 
+							strong Минимальная стоимость заказа — #[span 1500 ₽]
+							br
+							| Указана средняя цена за метр погонный. Конечная цена зависит от скорости порезки материала.
+						
+						p Стоимость изготовления чертежей по рисунку и шаблону формируется индивидуально (в среднем 10% от стоимости порезки). Стоимость склейки деталей составляет в среднем от 30% стоимости порезки.
+						+e.btn.btn.btn-primary(href="#") Заявка на услугу
+	// end sPriceTable

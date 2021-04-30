@@ -1,0 +1,24 @@
+mixin sCattingServises(data)
+	// start sCattingServises
+	+b.SECTION.sCattingServises.section#sCattingServises&attributes(attributes)
+		.container
+			+b.section-title
+				h3 Услуги гидроабразивной резки:
+				hr
+				
+			.roww
+				mixin item(i,t)
+					+e.col.col-12
+						+e.item
+							+e.img-wrap 
+								+pic(`sCattingServises-${i}.jpg`,'',0)
+							+e.caption 
+								+e.title= t
+								hr
+				+item(`1`,`Резка натурального камня`)
+				+item(`2`,`Резка керамики и керамогранита`)
+				+item(`3`,`Резка стекла и зеркал`)
+				+item(`4`,`Изготовление панно и декоров`)
+				+item(`5`,`Резка плит и слябов большого формата`)
+				+item(`6`,`Сверление отверстий`)
+	// end sCattingServises

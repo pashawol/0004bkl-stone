@@ -23,6 +23,7 @@ include ../blocks/Main-title/_Main-title.pug
 include ../blocks/sShipingServises/_sShipingServises.pug
 include ../blocks/sShipingPrice/_sShipingPrice.pug
 include ../blocks/sWorlds/_sWorlds.pug
+include ../blocks/sCooperations/_sCooperations.pug
 
 block variables
 	- let  mainPage= null
@@ -48,6 +49,7 @@ block pagecontent
 
 
 	+ourClients()
+	+sCooperations
 	+blockContacts()
 	//- +mainSlider()
 	//- +blockCatalog()

@@ -1,9 +1,74 @@
 // start .sWorlds
 .sWorlds {
+	--mt: 150px;
+	&__bg-block{
+		// margin-top: var(--mt);
+		@include bgs;
+		position: relative;
+		z-index: 2;
+		&::before{
+			content: '';
+			position: absolute;
+			left: 0;
+			top: 150px;
+			width: 100%;
+			height: calc(100% - 150px);
+			z-index: -1;
+			background-image: url(../img/@2x/sWorlds-bg.jpg);
+		}
+		.container{
+		
+			// position: relative; 
+			// margin-top: calc(-1 * var(--mt));
+		}
+	}
 		// --sPT: ;
 		// --sPB: ;
 		// --sTPB: ;
 
+		padding-bottom: rem(50);
+		.section-title{
+			padding-bottom: rem(40);
+		}
+	h6{
+		font-size: rem(18);
+	}
+	h6{
+		padding-bottom: rem(50);
+		font-size: rem(18);
+	}
+	&__item{
+		margin-bottom: 40px;
+		picture{
+			height: rem(330);
+		}
+		background-image:inherit;
+	}
+	margin-bottom: 20px;
+	&__caption{
+		margin-left: 20px;
+		margin-right: 20px;
+		color: #fff;
+		margin-top: -60px;
+		// background-color: #000;
+		z-index: 2;
+		position: relative;
+		padding: rem(40) rem(40) rem(40);
+		background-image: url(../img/@2x/sWorlds-bg.jpg);
+ 
+			@include bgs;
+	}
+	&__title{
+		padding: rem(30) 0;
+		margin-bottom: rem(30);
+		text-transform: uppercase;
+		border-top: 1px solid #7A6B61;
+		border-bottom: 1px solid #7A6B61;
+
+		span{
+			color: var(--Festival);
+		}
+	}
 	@include media-breakpoint-up(xl) {}
 	@include media-breakpoint-up(lg) {}
 	@include media-breakpoint-up(md) {}

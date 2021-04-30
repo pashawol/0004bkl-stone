@@ -1,0 +1,88 @@
+// start .sCooperations
+.sCooperations {
+		// --sPT: ;
+		// --sPB: ;
+		// --sTPB: ;
+		// margin-bottom: 50px;
+		padding-top: 40px;
+		& + .block-contacts{
+			margin-top: 50px;
+		}
+		// padding-bottom: 50px;
+		.section-title{
+			padding-bottom: 40px;
+		}
+		.roww{
+			--bs-gutter-x: 0;
+		}
+		picture{
+			@include media-breakpoint-up(md) {
+			height: 400px;
+			max-height: 400px;
+			max-width: 100%;
+			}
+			display: block;
+		}
+		.col-md-auto{
+			@include media-breakpoint-up(xl) {
+				max-width: 100%;
+			}
+			@include media-breakpoint-up(md) {
+		max-width: 60%;
+			}
+			max-width: 100%;
+			
+		}
+		&__col{
+			background: url(../assets/images/tab-body-fon1.jpg);
+			.roww{
+				min-height: 100%;
+				align-items: center;
+				// flex-wrap: nowrap;
+				@include media-breakpoint-up(xl) {
+					
+					// flex-direction: column;
+					// justify-content: space-between;
+				}
+			}
+			@include bgs;
+			@include media-breakpoint-up(md){
+
+				&:nth-child(even){
+					.col-md-auto{
+						height: 400px;
+						max-height: 400px;
+						order: 2; 
+					}
+				}
+			}
+		}
+		&__caption{
+			padding: rem(40) rem(34);
+				@include media-breakpoint-up(md) {
+					min-height: rem(300);
+				}
+		}
+		&__title{
+			font-weight: 900;
+			font-size: 30px;
+			font-weight: 900;
+			padding-bottom: rem(20);
+			&::after{
+				content: '';
+				margin-top: rem(15);
+				width: 94px;
+				height: 2px; 
+				background-color: var(--Festival);
+				display: block;
+			}
+		}
+	 
+	@include media-breakpoint-up(xl) {}
+	@include media-breakpoint-up(lg) {}
+	@include media-breakpoint-up(md) {}
+	@include media-breakpoint-up(sm) {}
+	@include media-breakpoint-between(md, xl) {}
+	@include media-breakpoint-only(xl) {}
+	@include media-breakpoint-down(xl) {}
+} // end.sCooperations

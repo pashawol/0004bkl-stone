@@ -1,0 +1,26 @@
+mixin itemCard(i, t)
+	+e.col.col-lg-3.col-md-6.col-12 
+		+e.item.bg-wrap 
+			+pic(i,'bg',0).picture-bg
+			+e.title= t
+			+e.btn.btn.btn-secondary(href="#")   Подробнее
+mixin sCards(data)
+	// start sCards
+	+b.sCards.section#sCards&attributes(attributes)
+		.container
+			.roww
+				+itemCard('stair.jpg','Лестницы из мрамора')
+				+itemCard('stair.jpg','Лестницы из гранита')
+				+itemCard('stair.jpg','Лестницы из травертина')
+				+itemCard('stair.jpg','Лестницы из оникса')
+	// end sCards
+mixin sCards2(data)
+	// start sCards
+	+b.sCards.section#sCards&attributes(attributes)
+		.container
+			.roww
+				+itemCard('floor.jpg','Полы из мрамора')
+				+itemCard('floor.jpg','Полы из гранита')
+				+itemCard('floor.jpg','Полы из травертина')
+				+itemCard('floor.jpg','Полы из оникса и кварцита')
+	// end sCards

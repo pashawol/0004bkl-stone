@@ -3,7 +3,7 @@ mixin sShipingServises(data)
 	+b.sShipingServises.section#sShipingServises&attributes(attributes)
 		.container
 			mixin item(i,t,p)
-				+e.item.typography
+				+e.item--bg.typography
 					.roww.gx-0
 						+e.slider--js.swiper-container 
 							.swiper-wrapper
@@ -19,4 +19,28 @@ mixin sShipingServises(data)
 			+item(`1`,`Упаковка`,`Изготавливается под габарит конкретных изделий по&nbsp;специальным требованиям, что&nbsp;бы изделия не&nbsp;деформировалось. Одну упаковку по&nbsp;весу стараются делать не&nbsp;более&nbsp;1т.`)
 			
 			+item(`2`,`Пирамида`,`Служит для перевозки слэбов, а&nbsp;так&nbsp;же изделий длинной формы. С&nbsp;неё легко снять изделия, но&nbsp;в&nbsp;не&nbsp;большом кол-ве, так как разгрузка с&nbsp;борта в&nbsp;ручную может повлечь повреждение изделий.`)
+	// end sShipingServises
+mixin sShipingServises2(data)
+	// start sShipingServises
+	+b.sShipingServises.mt-0.section#sShipingServises&attributes(attributes)
+		.container
+			mixin item(i,t,p)
+				+e.item.typography
+					.roww.gx-0
+						+e.slider--js.swiper-container.order-first
+							.swiper-wrapper
+								+e.slide.swiper-slide
+									img(src="img/@2x/ship-1.jpg", alt="")
+								+e.slide.swiper-slide
+									img(src="img/@2x/ship-2.jpg", alt="")
+							.swiper-pagination
+						+e.caption.col
+							h2= t
+							p JET 625 CNC: Фрезерно-мостовой станок ЧПУ с пятью интерполированными осями, ходом оси Z 400 мм, поворотом головы от -5° до - 365° и наклоном от 0° до 90° способен выполнять пропилы глубиной до 200мм. Идеально подходит для косых, круговых и эллиптических резов. А также для формирования любого вида профиля.
+
+							p JET 625 CNC оснащен системой Tools, которая контролируется инвертором, и позволяет использовать такой инструмент как: сверла, пальчиковые фрезы. Станок имеет моноблочную конструкцию, что делает установку очень быстрой.
+							a(href="#") Фотогалерея работ
+				// /+e.item
+			+item(`1`,`Donatoni Jet 625 CNC`,`Изготавливается под габарит конкретных изделий по&nbsp;специальным требованиям, что&nbsp;бы изделия не&nbsp;деформировалось. Одну упаковку по&nbsp;весу стараются делать не&nbsp;более&nbsp;1т.`)
+			
 	// end sShipingServises

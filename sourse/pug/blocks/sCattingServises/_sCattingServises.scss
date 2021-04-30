@@ -1,0 +1,60 @@
+// start .sCattingServises
+.sCattingServises {
+		// --sPT: ;
+		// --sPB: ;
+		line-height: (20 / 16);
+		padding-bottom: 40px;
+		// --sTPB: ;
+		.section-title{
+			// padding-bottom: 30px;
+			margin-bottom: 30px;
+		}
+		&__item{
+			min-height: calc(100% - 24px);
+			margin-bottom: 24px;
+			background: #F9F8F4;
+			text-transform: uppercase;
+			font-weight: bold;
+			display: flex;
+			flex-direction: column;
+			max-width: 212px;
+			margin-left: auto;
+			margin-right: auto;
+			hr{
+				background: #F5D343;
+				height: 2px;
+				width: 50px;
+				margin-top: auto;
+			}
+		}
+		&__title{
+			padding-bottom: 20px;
+		}
+		&__caption{
+			padding: 20px;
+			flex-grow: 1;
+			display: flex;
+			flex-direction: column;
+		}
+		img{
+			margin-left: auto;
+			margin-right: auto;
+			max-width: 100%;
+			height: auto;
+		}
+		&__col{
+			
+				@include media-breakpoint-up(xl) {--size: 2;}
+	@include media-breakpoint-up(lg) {--size: 3;}
+	@include media-breakpoint-up(md) {--size: 4;}
+	@include media-breakpoint-up(sm) {--size: 6;}
+			max-width: calc(var(--size) * 100% / 12);
+		}
+	@include media-breakpoint-up(xl) {}
+	@include media-breakpoint-up(lg) {}
+	@include media-breakpoint-up(md) {}
+	@include media-breakpoint-up(sm) {}
+	@include media-breakpoint-between(md, xl) {}
+	@include media-breakpoint-only(xl) {}
+	@include media-breakpoint-down(xl) {}
+} // end.sCattingServises

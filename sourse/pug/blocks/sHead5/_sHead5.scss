@@ -1,0 +1,79 @@
+// start .sHead5
+.sHead5 {
+		// --sPT: ;
+		// --sPB: ;
+		// --sTPB: ;
+		padding-top: 24px;
+		padding-bottom: 24px;
+		background: url(../assets/images/tab-body-fon1.jpg);
+	.block-border{
+		width: 100%;
+		max-width: 100%;
+		&::after{
+			left: 0;top: 0;
+			width: 100%;
+			height: 100%;
+		}
+		&__inner{
+				border-image: url(../assets/images/border-fon.jpg) 15 round round;
+			padding: 24px;
+				@include media-breakpoint-up(md) {
+					
+					padding-right: 330px;
+				}
+			position: relative;
+			img{
+			}
+		}
+	}
+	&__img-wrap{
+		max-width: 330px;
+			@include media-breakpoint-up(md) {
+
+				right: -32px;
+				position: absolute;
+				// bottom: -74px;@oin
+				@include a-cent1(y);
+			}
+			position: relative;
+		&::after{
+			content: url(../img/svg/like.svg);
+			position: absolute;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			right: -10px;
+			bottom: -10px;
+			background-color: $primary;
+			width: 70px;
+			height: 70px;
+			clip-path: polygon(65% 0%, 100% 50%, 100% 100%, 0% 100%, 0% 0%);
+		}
+
+	}
+	p{
+		line-height: 1.6;
+	}
+	h3{
+		font-size: 24px;
+		font-weight: 900;
+		max-width: 900px;
+
+	}
+	hr{
+		width: 94px;
+		height: 2px; 
+
+		background: #F5D343;
+		margin-top: 20px;
+		margin-bottom: 20px;
+
+	}
+	@include media-breakpoint-up(xl) {}
+	@include media-breakpoint-up(lg) {}
+	@include media-breakpoint-up(md) {}
+	@include media-breakpoint-up(sm) {}
+	@include media-breakpoint-between(md, xl) {}
+	@include media-breakpoint-only(xl) {}
+	@include media-breakpoint-down(xl) {}
+} // end.sHead5

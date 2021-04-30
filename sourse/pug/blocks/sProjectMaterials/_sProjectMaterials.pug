@@ -1,0 +1,23 @@
+mixin sProjectMaterials(data)
+	// start sProjectMaterials
+	+b.sProjectMaterials.section#sProjectMaterials&attributes(attributes)
+		+pic('project-bg.jpg','bg')
+		+e.slider-wrap
+			.container
+				+e.slider--js.swiper-container
+					.swiper-wrapper
+						- for (var x = 0; x < 5; x++)
+							+e.slide.swiper-slide
+								+e.item
+									a(href="#") 
+										img.flag(src="assets/images/symbol.png", loading="lazy" alt="")
+										+e.img(src="assets/images/catalog1-img1.jpg" , loading="lazy" alt="")
+									+e.caption
+										+e.caption-inner
+											+e.title 
+												a(href="#") Мрамор Барджилио Нуволато (Bardiglio Nuvolato)
+											p Слэбы: от #[strong 17 255₽] / 250$
+											p Плита: от #[strong 10 353₽] / 150$
+					+arrow
+
+	// end sProjectMaterials

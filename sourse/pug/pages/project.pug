@@ -19,6 +19,8 @@ include ../blocks/blockWork/_blockWork.pug
 include ../blocks/breadcrumbs/_breadcrumbs.pug
 include ../blocks/ourClients/_ourClients.pug
 include ../blocks/blockContacts/_blockContacts.pug
+include ../blocks/sGal/_sGal.pug
+include ../blocks/sProjectMaterials/_sProjectMaterials.pug
 
 block variables
 	- let  mainPage= null
@@ -37,6 +39,46 @@ block pagecontent
 			{title}
 		]
 	})
+
+	+b.page-head 
+		.container 
+			.roww.gx-4
+				.col-md
+					.section-title 
+						h1 Дворец Искусств «Нефтяник»
+						span в сургуте
+						hr
+					p ДИ&nbsp;&laquo;Нефтяник&raquo;&nbsp;&mdash; это концертно-театральный комплекс с&nbsp;самыми современными техническими возможностями, призванный стать просветительской площадкой, местом единения и&nbsp;духовного обогащения жителей и&nbsp;гостей Югорского края. Корпоративная и&nbsp;досуговая деятельность&nbsp;&mdash; основные направления работы дворца. 
+
+					p Представляя сегодня на&nbsp;своей сцене известные театральные постановки, организуя концерты популярных российских артистов, прославленных музыкальных и&nbsp;танцевальных коллективов, проводя окружные фестивали, Нефтяник способствует духовному и&nbsp;культурному обогащению жителей югорского края. Здесь горожан всегда ждут новые встречи с&nbsp;Искусством, которые коллектив дворца обещает сделать яркими и&nbsp;незабываемыми.
+
+					p ДИ&nbsp;&laquo;Нефтяник&raquo; является самой крупной по&nbsp;своим размерам концертно-театральной площадкой Уральского федерального округа.
+				+e.col.col-md-auto
+					.block-border
+						.block-border__inner
+							.section-title
+								h3 Что было сделано
+								hr
+							br
+							.block-border__item 
+								.block-border__img-wrap
+									img(src="img/svg/head-i-1.svg", alt="")
+								| Облицовка стен 
+								
+							.block-border__item 
+								.block-border__img-wrap
+									img(src="img/svg/head-i-2.svg", alt="")
+								| Столешницы
+							.block-border__item 
+								.block-border__img-wrap
+									img(src="img/svg/head-i-3.svg", alt="")
+								| Облицовка колонн
+							.block-border__item 
+								.block-border__img-wrap
+									img(src="img/svg/head-i-4.svg", alt="")
+								| Облицовка лестниц
+	+sProjectMaterials
+	+sGal
 	+ourClients()
 	+blockWork()
 	+blockContacts()

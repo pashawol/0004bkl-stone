@@ -19,6 +19,12 @@ include ../blocks/breadcrumbs/_breadcrumbs.pug
 include ../blocks/ourClients/_ourClients.pug
 include ../blocks/blockContacts/_blockContacts.pug
 include ../blocks/ourWorks/_ourWorks.pug
+include ../blocks/sCooperations/_sCooperations.pug
+include ../blocks/Main-title/_Main-title.pug
+include ../blocks/sCattingServises/_sCattingServises.pug
+include ../blocks/sPriceTable/_sPriceTable.pug
+include ../blocks/sShipingServises/_sShipingServises.pug
+include ../blocks/sHead5/_sHead5.pug
 
 block variables
 	- let  mainPage= null
@@ -37,11 +43,65 @@ block pagecontent
 			{title}
 		]
 	})
-	+blockCatalog() 
+
+	+Main-title2()
+	+b.page-head--section
+		.container 
+			.roww.gx-4
+				.col-md
+					.section-title 
+						h2 Что такое гидроабразивная резка
+
+						span натурального камня и керамики?
+						hr
+					p: strong Технология гидроабразивной резки заключается в процессе обработки материалов, при котором в качестве режущего инструмента используется струя воды, включающая абразивный материал, поступающая под сверхвысоким давлением со сверхвысокой скоростью.
+
+					p Оборудование для гидроабразивной резки позволяет осуществлять фигурную резку и производить раскрой широкого спектра материалов от пластиков до камня. Даже при раскрое такого хрупкого материала, как стекло или мрамор, гидроабразивная обработка позволяет создавать неповторимые другими технологиями контуры и формы (острые углы и идеальные окружности). Диапазон обрабатываемых толщин от 0.1мм - 300мм и выше, что делает данную технологию незаменимой в сфере камнеобработки. Диаметр режущей струи составляет 0.5-1.5 мм, благодаря чему отход отрабатываемого материала минимален, а резку можно начинать в каждой точке по контуру любой сложности. Гидроабразивный раскрой имеет ряд неоспоримых преимуществ перед другими традиционными технологиями, а иногда является и единственным способом. По сравнению с альтернативными методами (лазерная и плазменная резка), водоструйная обработка выигрывает в первую очередь за счёт своей универсальности.
+					br
+					br
+					.section-title
+						h3 Преимущества:
+						hr
+					ul.List-style
+						li Низкотемпературный характер реза;
+						li Отсутствие химического и механического воздействия на материал;
+						li Возможность воспроизводить точные контуры и профили;
+						li Возможность резки самых разнообразных материалов;
+						li Автоматизация всех процессов;
+						li Экономичность.
+				+e.col.col-md-auto
+					.block-border
+						.block-border__inner
+							.text-center: img(src="img/svg/graff.svg", alt="")
+							p.small
+								br
+								| 1 — Подвод воды под высоким давлением
+								br
+								| 2 — Сопло
+								br
+								| 3 — Подача абразива
+								br
+								| 4 — Смесительная камера
+								br
+								| 5 — Смесительная трубка
+								br
+								| 6 — Защитный кожух
+								br
+								| 7 — Режущая струя
+								br
+								| 8 — Разрезаемый материал
+								br
+								| 9 — Слой воды для гашения энергии струи
+	+sCattingServises
+	+sPriceTable
+	+sShipingServises2
+	+sHead5
+	//- +blockCatalog() 
 				//-blockCatalog !!! почти то что нужно, но требует корректив
 	//- +ourClients()
 	+ourWorks().article-our-works
 				//- на .article-our-works висят паддинги в изначальной верстке
+	+sCooperations
 	+blockWork()
 	+blockContacts()
 	//- +mainSlider()

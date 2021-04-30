@@ -1,0 +1,79 @@
+// start .sProjectMaterials
+.sProjectMaterials {
+		// --sPT: ;
+		// --sPB: ;
+		// --sTPB: ;
+		&__slider{
+			margin-top: -40px;
+		}
+	.swiper-button-hand{
+		background-color: #fff;
+	}
+			&__item{
+		margin-bottom: 40px;
+		position: relative;
+		a{
+			color: #fff;
+		}
+		img{
+		}
+		background-image:inherit;
+	}
+	margin-bottom: 20px;
+	.flag{
+		position: absolute;
+		right: 0;
+		top: 0;
+	}
+	&__img{
+		height: rem(221);
+		width: 100%;
+		object-fit: cover;
+
+	}
+	&__slider-wrap{
+		background-image: url(../img/@2x/sWorlds-bg.jpg);
+			@include bgs;
+	}
+	&__slide{
+		max-width: 330px;
+	}
+	&__caption{
+		margin-left: 20px;
+		margin-right: 20px;
+		color: #fff;
+		margin-top: -60px;
+		// background-color: #000;
+		z-index: 2;
+		position: relative;
+		padding: rem(20) rem(20) rem(20);
+		background-image: url(../img/@2x/sWorlds-bg.jpg); 
+		@include bgs;
+		line-height: (24 / 16);
+	}
+	&__caption-inner{
+		border-top: 1px solid #7A6B61;
+		border-bottom: 1px solid #7A6B61;
+		padding-bottom: 20px; 
+			margin-bottom: 10px;
+	}
+	&__title{
+		// padding: rem(30) 0 ;
+		padding-top: 20px;
+		// margin-bottom: rem(30);
+		text-transform: uppercase;
+		font-weight: bold;
+
+		span{
+			color: var(--Festival);
+		}
+	}
+
+	@include media-breakpoint-up(xl) {}
+	@include media-breakpoint-up(lg) {}
+	@include media-breakpoint-up(md) {}
+	@include media-breakpoint-up(sm) {}
+	@include media-breakpoint-between(md, xl) {}
+	@include media-breakpoint-only(xl) {}
+	@include media-breakpoint-down(xl) {}
+} // end.sProjectMaterials

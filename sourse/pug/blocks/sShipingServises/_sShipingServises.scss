@@ -4,9 +4,13 @@
 		// --sPB: ;
 		// --sTPB: ;
 		margin-top: rem(-70);
+		padding-bottom: rem(80);
 		--y: #{rem(20)};
 		&__item{
-			background: url(../assets/images/tab-body-fon1.jpg);
+			&--bg{
+
+				background: url(../assets/images/tab-body-fon1.jpg);
+			}
 			position: relative;
 			margin-bottom: calc(2 * var(--y));
 			&:not(:last-child){
@@ -81,6 +85,7 @@
 		}
 	}
 
+	
 	@include media-breakpoint-up(xl) {}
 	@include media-breakpoint-up(lg) {}
 	@include media-breakpoint-up(md) {}
@@ -89,3 +94,7 @@
 	@include media-breakpoint-only(xl) {}
 	@include media-breakpoint-down(xl) {}
 } // end.sShipingServises
+
+.mt-0{
+	margin-top: 0;
+}
