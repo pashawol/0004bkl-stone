@@ -332,3 +332,9 @@ $primary: #F5D343;
 		display: none;
 	}
 }
+.styleCircle  svg{
+	transform: rotateY(180deg);
+	path{
+		position: relative;
+	}
+}
