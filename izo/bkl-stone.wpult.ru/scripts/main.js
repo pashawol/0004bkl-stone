@@ -24,7 +24,12 @@ $(document).ready(function(){
     }else{
         $(".header-catalog").removeClass("BtnMenu");
     }
-    $(document).on('click','.BtnMenu', function(){
+    $(document).on('click','.BtnMenu .defLink', function(e){
+
+        e.preventDefault();
+    })
+    $(document).on('click','.BtnMenu', function(e){
+        e.preventDefault();
         $(this).toggleClass("close");
         $("body").toggleClass("fixed");
         if ($(this).is(".header-catalog") == false){
