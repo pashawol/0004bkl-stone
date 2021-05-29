@@ -340,8 +340,40 @@ $primary: #F5D343;
 }
 
 .BtnMenu {
-	
+
 }
 .BtnMenu .defLink{
 	pointer-events: none;
+}
+
+
+@media (min-width: 1300px){
+
+	// .modal .sync-slider .popup-sync-top1 .swiper-button-prev{
+	// 	left: 34px;
+	// }
+	// .modal .sync-slider .popup-sync-top1 .swiper-button-next{
+	// 	right: 34px;
+	// }
+	.sync-slider{
+		
+		.popup-sync-top {
+
+		}
+		max-width: (1152px - 13px );
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.modal .sync-slider .popup-sync-top1,
+	.modal .sync-slider .popup-sync-top {
+    padding: 0 80px 70px;
+}
+}
+
+.modal .sync-slider .popup-sync-top .swiper-button-prev,
+.modal .sync-slider .popup-sync-top .swiper-button-next,
+.modal .sync-slider .popup-sync-top1 .swiper-button-prev,
+.modal .sync-slider .popup-sync-top1 .swiper-button-next{
+	width: 60px;
 }

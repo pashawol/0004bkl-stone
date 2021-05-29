@@ -633,14 +633,14 @@ $(document).ready(function(){
         j = 0;
 
     var offsetMe = function () {
-        if (offset < 0) offset = 1500;
+        if (offset < 0) offset = 2000;
         circle.css("stroke-dashoffset", offset);
          j++;
-        if (j > 240) {
-             offset = offset - 6.3;
-         } else {
-        offset = offset - 8;
-        }
+        // if (j > 240) {
+        //      offset = offset - 6.3;
+        //  } else {
+        // offset = offset - 8;
+        // }
         requestAnimationFrame(offsetMe);
     }
     /* our work slider */
