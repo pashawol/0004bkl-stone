@@ -26,6 +26,7 @@
 		.col-md-auto{
 			@include media-breakpoint-up(xl) {
 				max-width: 100%;
+				width: 100%;
 			}
 			@include media-breakpoint-up(md) {
 		max-width: 60%;

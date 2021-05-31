@@ -16,6 +16,7 @@ include ../blocks/blockNews/_blockNews.pug
 include ../blocks/interestingFacts/_interestingFacts.pug
 include ../blocks/blockText/_blockText.pug
 include ../blocks/blockContacts/_blockContacts.pug
+include ../blocks/sCooperations/_sCooperations.pug
 
 block variables
 	- let  mainPage= null
@@ -37,6 +38,7 @@ block pagecontent
 		+blockWithVideo()
 		+sliderGallery()
 		+ourClients()
+		+sCooperations
 		+servicesTabs()
 		+blockWork()
 		+blockNews()
