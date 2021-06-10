@@ -11,7 +11,9 @@ mixin sCooperations(data)
 				+e.col.col-xl-4 
 					.roww
 						.col-xl-12.col-md-auto
-							+pic(`sCooperations-${i}.jpg`,'bg',0)
+							+e.img-wrap
+								+pic(`sCooperations-${i}.jpg`,'bg',0)
+								a.defLink.btn.btn-primary(href="#")  Посмотреть условия
 						.col-xl-12.col
 							+e.caption
 								+e.title= t

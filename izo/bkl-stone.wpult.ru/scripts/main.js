@@ -24,12 +24,7 @@ $(document).ready(function(){
     }else{
         $(".header-catalog").removeClass("BtnMenu");
     }
-    $(document).on('click','.BtnMenu .defLink', function(e){
-
-        e.preventDefault();
-    })
-    $(document).on('click','.BtnMenu', function(e){
-        e.preventDefault();
+    $(document).on('click','.BtnMenu', function(){
         $(this).toggleClass("close");
         $("body").toggleClass("fixed");
         if ($(this).is(".header-catalog") == false){
@@ -633,14 +628,14 @@ $(document).ready(function(){
         j = 0;
 
     var offsetMe = function () {
-        if (offset < 0) offset = 2000;
+        if (offset < 0) offset = 1500;
         circle.css("stroke-dashoffset", offset);
          j++;
-        // if (j > 240) {
-        //      offset = offset - 6.3;
-        //  } else {
-        // offset = offset - 8;
-        // }
+        if (j > 240) {
+             offset = offset - 6.3;
+         } else {
+        offset = offset - 8;
+        }
         requestAnimationFrame(offsetMe);
     }
     /* our work slider */

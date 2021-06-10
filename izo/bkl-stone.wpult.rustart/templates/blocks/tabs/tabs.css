@@ -1,0 +1,452 @@
+.block-catalog__inner{
+        width: 100%;
+    }
+.tab-btns{
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+    }
+.tab-btns__wrap{
+            margin: 0 -12px;
+        }
+.tab-btns .active{
+            position: relative;
+            z-index: 1;
+            overflow: hidden
+        }
+.tab-btns .active::before{
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        content: "";
+        top: 0;
+        left: 0;
+        background-color: var(--Festival);
+        background-color: var(--Festival);
+        z-index: -1;
+}
+.tab-btns .active::after{
+        position: absolute;
+        content: "";
+        width: 70px;
+        height: 70px;
+        background: -webkit-gradient( linear, left bottom, left top, from(rgb(234,198,50)), to(rgb(223,167,41)));
+        background: -webkit-linear-gradient( bottom, rgb(234,198,50) 0%, rgb(223,167,41) 100%);
+        background: -o-linear-gradient( bottom, rgb(234,198,50) 0%, rgb(223,167,41) 100%);
+        background: linear-gradient( 0deg, rgb(234,198,50) 0%, rgb(223,167,41) 100%);
+        -webkit-transform: rotate(45deg);
+                transform: rotate(45deg);
+        right: -35px;
+        bottom: -35px;
+        z-index: -1;
+}
+.tab-bodies{
+        margin-top: -10px;
+        border: 10px solid var(--Festival);
+        border: 10px solid var(--Festival);
+    }
+.tab-body{
+        display: none;
+        padding: 50px 25px 90px;
+        background-color: var(--FloralWhite);
+        background-color: var(--FloralWhite);
+    }
+.services-tabs{
+    background-color: var(--FloralWhite);
+    background-color: var(--FloralWhite);
+    padding: 24px 0;
+    margin-bottom: 40px;
+}
+.services-tabs__inner{
+        width: 100%;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+    }
+.services-tabs__left{
+        max-width: 684px;
+        width: 100%;
+        padding-top: 50px;
+        margin-right: 30px;
+    }
+.services-tabs__left img{
+            width: 60px;
+            margin-bottom: 14px;
+        }
+.services-tabs__left .section-title{
+            margin-bottom: 38px;
+        }
+.services-tabs__right{
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        min-height: 610px;
+    }
+.services-tabs__right .tab-body{
+            height: 100%;
+            padding: 50px 50px 60px;
+            background-color: transparent;
+        }
+.services-tabs__right::after{
+        position: absolute;
+        content: "";
+        left: -24px;
+        top: -24px;
+        bottom: -24px;
+        background: url("../assets/images/tab-body-fon1.jpg");
+        right: calc(680px - 50vw);
+        z-index: -1;
+}
+.services-tabs .tab-btn{
+        width: 33%;
+        background-color: var(--White);
+        background-color: var(--White);
+        padding: 20px;
+        border: 12px solid var(--FloralWhite);
+        border: 12px solid var(--FloralWhite);
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: reverse;
+            -ms-flex-direction: column-reverse;
+                flex-direction: column-reverse;
+        -webkit-box-align: end;
+            -ms-flex-align: end;
+                align-items: flex-end;
+        background-color: var(--White);
+        background-color: var(--White);
+        position: relative;
+        text-align: left;
+    }
+.services-tabs .tab-btn p{
+            font-weight: 500;
+        }
+.services-tabs .tab-btn:hover{
+        border-color: #bcb299;
+}
+.services-tabs .tab-btn .tab-number{
+            position: absolute;
+            font-size: 3rem;
+            font-weight: 900;
+            color: var(--FloralWhite);
+            color: var(--FloralWhite);
+            left: 20px;
+            top: 5px;
+}
+.services-tabs .tab-btns{
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+    }
+.services-tabs .tab-btns .active{
+            border-color: var(--Festival);
+            border-color: var(--Festival)
+        }
+.services-tabs .tab-btns .active::before, .services-tabs .tab-btns .active::after{
+        display: none;
+}
+.services-tabs .tab-btns__wrap{
+            overflow: hidden!important;
+        }
+.services-tabs .tab-bodies{
+        margin-top: 0;
+        max-width: 568px;
+        width: 100%;
+    }
+.services-tabs .tab-bodies .section-title{
+            margin-bottom: 0;
+        }
+.services-tabs .tab-bodies .section-title h4{
+                text-transform: none;
+                margin-bottom: 32px;
+            }
+.block-border{
+    max-width: 566px;
+    width: 100%;
+    margin-left: auto;
+    position: relative;
+    z-index: 1;
+}
+.block-border__inner{
+        border-width: 15px;
+        border-style: solid;
+        -webkit-border-image: url("../assets/images/tab-body-fon.jpg") 15 round round;
+             -o-border-image: url("../assets/images/tab-body-fon.jpg") 15 round round;
+                border-image: url("../assets/images/tab-body-fon.jpg") 15 round round;
+    }
+.block-border::after{
+        position: absolute;
+        content: "";
+        left: -24px;
+        top: -24px;
+        bottom: -24px;
+        background: url("../assets/images/tab-body-fon1.jpg");
+        right: calc(680px - 50vw);
+        z-index: -1;
+}
+.cardTabs{
+    margin-bottom: 50px;
+}
+.cardTabs .tab-btns__wrap{
+            margin: 0;
+            overflow-y: hidden;
+        }
+.cardTabs .tab-btns .tab-btn{
+            background-color: #f2f0eb;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-align: center;
+                -ms-flex-align: center;
+                    align-items: center;
+            width: 25%;
+            border-bottom: 2px solid var(--White);
+            border-bottom: 2px solid var(--White);
+            border-top: 4px solid #f2f0eb;
+            -webkit-box-pack: center;
+                -ms-flex-pack: center;
+                    justify-content: center;
+            padding: 25px 0 23px;
+            position: relative;
+            -webkit-transition: all .4s ease-out;
+            -o-transition: all .4s ease-out;
+            transition: all .4s ease-out
+        }
+.cardTabs .tab-btns .tab-btn:hover{
+        border-top-color: var(--Akaroa1);
+        border-top-color: var(--Akaroa1);
+        -webkit-transition: all .4s ease-out;
+        -o-transition: all .4s ease-out;
+        transition: all .4s ease-out;
+}
+.cardTabs .tab-btns .tab-btn:not(:last-of-type)::after,.cardTabs .tab-btns .tab-btn.active::after{
+        position: absolute;
+        content: "";
+        width: 2px;
+        height: calc(100% + 4px);
+        right: 0;
+        top: -4px;
+        background: var(--White);
+        background: var(--White);
+        -webkit-transform: rotate(0);
+                transform: rotate(0);
+}
+.cardTabs .tab-btns .tab-btn i{
+                font-size: 20px;
+                margin-right: 10px;
+                color: var(--Akaroa1);
+                color: var(--Akaroa1);
+}
+.cardTabs .tab-btns .tab-btn span{
+                font-size: 16px;
+                font-weight: 700;
+                text-transform: uppercase;
+}
+.cardTabs .tab-btns .active, .cardTabs .tab-btns .active:hover{
+            background-color: var(--FloralWhite);
+            background-color: var(--FloralWhite);
+            border-bottom-color: var(--FloralWhite);
+            border-bottom-color: var(--FloralWhite);
+            border-top-color: var(--Festival);
+            border-top-color: var(--Festival);
+            overflow: inherit
+        }
+.cardTabs .tab-btns .active::before,.cardTabs .tab-btns .active:hover::before{
+        display: none;
+}
+.cardTabs .tab-bodies{
+        border: none;
+        margin: 0;
+        overflow: hidden;
+        height: 480px
+    }
+.cardTabs .tab-bodies> .mCSB_inside>.mCSB_container{
+        margin-right: 0;
+}
+.cardTabs .tab-bodies> .mCSB_inside> .mCSB_scrollTools{
+        bottom: 20px;
+}
+.cardTabs .tab-body{
+        padding: 20px;
+    }
+@media(max-width: 1440px){
+    .block-border::after{
+                right: -24px;
+        }
+}
+@media(max-width: 1300px){
+            .block-catalog__inner .similarGoods__priceWrap{
+                -webkit-box-align: end;
+                    -ms-flex-align: end;
+                        align-items: flex-end;
+            }
+                .block-catalog__inner .similarGoods__priceWrap span{
+                    display: block;
+                }
+}
+@media(max-width: 1199px){
+        .tab-btns__wrap{
+            margin: 0;
+        }
+        .services-tabs__right{
+            max-width: 40%;
+        }
+            .services-tabs__left .tab-btn .tab-number{
+                left: 10px;
+            }
+    .cardTabs{
+        margin-bottom: 40px;
+    }
+        .cardTabs .tab-body{
+            padding: 10px;
+        }
+        .cardTabs .tab-bodies{
+            height: 470px;
+        }
+}
+@media(max-width: 1024px){
+        .block-catalog .tabs-container{
+            margin: 0 -24px;
+        }
+    .tab-body{
+        padding: 40px 14px 50px;
+    }
+        .services-tabs__inner{
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+                -ms-flex-direction: column;
+                    flex-direction: column;
+        }
+        .services-tabs__left{
+            max-width: 100%;
+            padding-top: 18px;
+            padding-bottom: 50px;
+            margin-right: 0;
+        }
+            .services-tabs__left .section-title{
+                margin-bottom: 28px;
+            }
+        .services-tabs__right{
+            max-width: 100%;
+        }
+        .services-tabs .tab-bodies{
+            max-width: 100%;
+        }
+            .block-catalog__inner .similarGoods__priceWrap{
+                -webkit-box-align: center;
+                    -ms-flex-align: center;
+                        align-items: center;
+            }
+                .block-catalog__inner .similarGoods__priceWrap span{
+                    display: inline;
+                }
+}
+@media(max-width: 991px){
+        .services-tabs .tab-btn{
+            width: 50%;
+            -webkit-box-orient: horizontal;
+            -webkit-box-direction: normal;
+                -ms-flex-direction: row;
+                    flex-direction: row;
+            -webkit-box-pack: justify;
+                -ms-flex-pack: justify;
+                    justify-content: space-between;
+            -webkit-box-align: start;
+                -ms-flex-align: start;
+                    align-items: flex-start;
+        }
+            .services-tabs .tab-btn img{
+                margin-bottom: 0;
+            }
+            .services-tabs .tab-btn .tab-number{
+                position: static;
+            }
+        .services-tabs__right{
+            min-height: 535px;
+        }
+}
+@media(max-width: 767px){
+        .block-catalog .tabs-container{
+            margin: 0 -16px;
+        }
+        .tab-bodies{
+            margin-top: -8px;
+        }
+        .tab-body{
+            border-width: 8px;
+        }
+        .services-tabs__left{
+            padding-top: 0;
+        }
+            .services-tabs__left .section-title{
+                margin-bottom: 10px;
+            }
+    .block-border::after{
+                top: -16px;
+                left: -16px;
+                right: -16px;
+                bottom: -16px;
+        }
+}
+@media(max-width: 575px){
+    .services-tabs {
+        padding-bottom: 0;
+        margin-bottom: 20px;
+    }
+        .services-tabs .tab-btn {
+            padding: 0 10px 10px;
+            border-width: 8px;
+        }
+            .services-tabs .tab-btn .tab-number{
+                font-size: 2.57rem;
+            }
+            .services-tabs .tab-btn img{
+                width: 40px;
+                position: absolute;
+                right: 10px;
+                top: 10px;
+            }
+            .services-tabs .tab-btn p{
+                margin-top: 14px;
+            }
+            .services-tabs .tab-btns__wrap{
+                margin: 0 -8px;
+            }
+            .services-tabs__right .tab-body{
+                padding: 20px 16px 30px;
+            }
+        .services-tabs__left{
+            padding-bottom: 10px;
+        }
+    .block-border{
+            margin: 0 -16px;
+            width: auto;
+            max-width: -webkit-max-content;
+            max-width: -moz-max-content;
+            max-width: max-content;
+            min-width: 100vw;
+    }
+        .block-border__inner{
+            border-width: 16px;
+        }
+    .block-border::after{
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+        }
+}
+@media(max-width: 400px){
+            .block-catalog__inner .similarGoods__priceWrap{
+                -webkit-box-align: end;
+                    -ms-flex-align: end;
+                        align-items: flex-end;
+            }
+                .block-catalog__inner .similarGoods__priceWrap span{
+                    display: block;
+                }
+                .block-catalog__inner .similarGoods__priceWrap img{
+                    width: 20px;
+                }
+}
+/*# sourceMappingURL=../../../maps/templates/blocks/tabs/tabs.css.map */

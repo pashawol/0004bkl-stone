@@ -1,0 +1,266 @@
+.leave-feedback{
+    border-top: 1px solid var(--WanWhite);
+    border-top: 1px solid var(--WanWhite);
+    border-bottom: 1px solid var(--WanWhite);
+    border-bottom: 1px solid var(--WanWhite);
+    padding: 30px 30px 40px;
+    background-color: var(--FloralWhite);
+    background-color: var(--FloralWhite);
+    width: 100%;
+    margin-bottom: 10px;
+}
+    .leave-feedback__inner{
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
+        -webkit-box-align: start;
+            -ms-flex-align: start;
+                align-items: flex-start;
+    }
+    .leave-feedback__title{
+        font-weight: 500;
+        font-size: 1.125rem;
+        text-transform: uppercase;
+        margin-bottom: 15px;
+        color: var(--WoodBark);
+        color: var(--WoodBark);
+    }
+    .leave-feedback .bg-Festival button{
+            padding: 16px 0 14px;
+            width: 212px;
+        }
+.rating-list{
+    list-style: none;
+}
+.rating-list .input-brim{
+        font-size: 16px;
+        font-weight: 500;
+        color: var(--WoodBark);
+        color: var(--WoodBark);
+        -webkit-box-align: start;
+            -ms-flex-align: start;
+                align-items: flex-start;
+        width: 36px
+    }
+.rating-list .input-brim::after{
+    width: 14px;
+    height: 14px;
+    top: 2px;
+    left: 2px;
+    border-color: var(--Akaroa);
+    border-color: var(--Akaroa);
+}
+.rating-list .input-brim::before{
+    top: 5px;
+    left: 6px;
+    font-size: 8px;
+    font-weight: 700;
+}
+.rating-list .input-brim input{
+            margin-right: 10px;
+}
+.rating-list li{
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex
+    }
+.rating-list li:not(:last-of-type){
+    margin-bottom: 8px;
+}
+.rating-list li i{
+            color: #e1ac2a;
+            font-size: 15px;
+            margin: 0 33px 0 4px;
+}
+.rating-band{
+    width: 330px;
+    height: 12px;
+    background-color: var(--WanWhite);
+    background-color: var(--WanWhite);
+    position: relative;
+}
+.rating-band-inner{
+        position: absolute;
+        content: "";
+        width: 0;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background-color: var(--Festival);
+        background-color: var(--Festival);
+        -webkit-transition: .4s;
+        -o-transition: .4s;
+        transition: .4s;
+    }
+.rating-band-wrap{
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+    }
+.rating-band-wrap span{
+            font-weight: 300;
+            margin-left: 24px;
+            color: var(--WoodBark);
+            color: var(--WoodBark);
+        }
+.reviews-list{
+    width: 100%
+}
+.reviews-list.typography p{
+            margin-bottom: 0;
+}
+.reviews-list .blockMore-el{
+        margin-top: 22px;
+}
+.reviews-list .BtnMore{
+        width: 100%;
+}
+.review{
+    padding: 30px 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column
+}
+.review:not(:last-of-type){
+    border-bottom: 1px solid #e6e2d8;
+}
+.review__inner{
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+}
+.review__title{
+        margin-bottom: 13px;
+}
+.review__title .name{
+            font-weight: 700;
+        }
+.review__title span:not(:last-of-type){
+    position: relative;
+    padding-right: 21px;
+}
+.review__title span:not(:last-of-type)::after{
+    position: absolute;
+    content: "";
+    width: 2px;
+    height: 2px;
+    background-color: var(--Cork);
+    background-color: var(--Cork);
+    top: 50%;
+    right: 8px;
+}
+.review__rating{
+        margin-bottom: 20px;
+}
+.review__text{
+        padding: 0 40px 0 115px;
+}
+.review__text img{
+            display: inline-block;
+            margin-right: 24px;
+            margin-top: 20px;
+        }
+.avatar{
+    max-width: 95px;
+    width: 100%;
+    margin-right: 22px;
+    border-radius: 50%;
+    overflow: hidden;
+    height: 95px;
+}
+.avatar img{
+        width: 100%;
+        height: 100%;
+    }
+.jq-ry-container>.jq-ry-group-wrapper>.jq-ry-group, .jq-ry-container>.jq-ry-group-wrapper>.jq-ry-group.jq-ry-rated-group{
+    z-index: 2;
+}
+@media(max-width: 991px){
+    .rating-band{
+        width: 255px;
+    }
+    .review{
+        padding: 25px 0;
+    }
+        .review__text{
+            padding: 0 0 0 95px;
+        }
+    .avatar{
+        max-width: 69px;
+        height: 69px;
+    }
+}
+@media(max-width: 767px){
+    .leave-feedback{
+        padding-bottom: 0;
+    }
+        .leave-feedback__inner{
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+                -ms-flex-direction: column;
+                    flex-direction: column;
+            -webkit-box-align: inherit;
+                -ms-flex-align: inherit;
+                    align-items: inherit;
+        }
+            .leave-feedback__inner .bg-Festival{
+                margin: 20px -30px 0;
+            }
+                .leave-feedback__inner .bg-Festival button{
+                    width: 100%;
+                }
+}
+@media(max-width: 575px){
+    .leave-feedback{
+        padding: 18px 15px 0;
+        margin-bottom: 5px;
+    }
+            .leave-feedback__inner .bg-Festival{
+                margin-left: -15px;
+                margin-right: -15px;
+            }
+                .leave-feedback__inner .bg-Festival button{
+                    padding: 12px 0 10px;
+                }
+             .rating-list li i{
+                 margin-right: 15px;
+             }
+    .rating-band{
+        width: 130px;
+    }
+            .rating-band-wrap span{
+                margin-left: 16px;
+            }
+    .avatar{
+        max-width: 60px;
+        height: 60px;
+        margin-right: 16px;
+    }
+        .review__text{
+            padding-left: 0;
+        }
+        .review__title{
+            margin-bottom: 4px;
+        }
+            .review__title .name{
+                display: block;
+                line-height: 14px
+            }
+            .review__title .name::after{
+        display: none;
+    }
+        .review__rating{
+            margin-bottom: 15px;
+        }
+}
+/*# sourceMappingURL=../../../maps/templates/blocks/reviews/reviews.css.map */

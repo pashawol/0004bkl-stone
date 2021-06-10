@@ -1,0 +1,188 @@
+.customer-title{
+    padding-bottom: 50px;
+}
+.customer-stages{
+    background: url("../assets/images/customer-stages-fon.jpg") no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    padding-top: 73px;
+    overflow: hidden;
+}
+.customer-stages .stages-project::after{
+    background: url("../assets/images/block-el1.png") no-repeat;
+    background-position: right;
+    bottom: -24px;
+}
+.customer-blockCalculat{
+    background: var(--FloralWhite);
+    background: var(--FloralWhite);
+}
+.customer-blockCalculat .section-title h3{
+        margin-bottom: 20px;
+    }
+.customer-blockCalculat .infoList__wrap{
+        margin-top: 0;
+    }
+.customer-blockCalculat .infoList__wrap .left{
+            padding: 65px 0 42px;
+        }
+.customer-blockCalculat .List-style{
+        background-color: transparent;
+        margin-top: 0;
+        padding: 0 40px 0 0
+    }
+.customer-blockCalculat .List-style.section-title h1,.customer-blockCalculat .List-style.section-title h2,.customer-blockCalculat .List-style.section-title h3,.customer-blockCalculat .List-style.section-title h4,.customer-blockCalculat .List-style.section-title h5,.customer-blockCalculat .List-style.section-title h6{
+                font-style: normal;
+}
+.customer-blockCalculat .List-style li::after{
+    top: 7px;
+}
+.customer-blockCalculat .block-border{
+        min-height: 486px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+    }
+.customer-blockCalculat .block-border__inner{
+            width: 100%;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+                -ms-flex-direction: column;
+                    flex-direction: column;
+        }
+.customer-blockCalculat .block-border__inner .bg-Festival{
+                margin-top: auto;
+            }
+.customer-blockCalculat .block-border__inner::after{
+    top: 112px;
+}
+.customer-blockCalculat .block-border .section-title h3{
+            margin-bottom: 0;
+        }
+.type2-withFon .materialSelection__text{
+            max-width: 50%;
+        }
+.type2-withFon .materialSelection__text .bg-Festival{
+               max-width: 290px;
+               margin-top: 40px;
+            }
+.type2-withFon .materialSelection__text .bg-Festival a{
+                   padding: 18px 0 16px;
+               }
+.type2-withFon .materialSelection__slider{
+            max-width: 50%;
+        }
+.type2-withFon .materialSelection__slider .slide-bigImg{
+                max-width: 100%;
+                min-height: 560px
+            }
+.type2-withFon .materialSelection__slider .slide-bigImg::after{
+    display: none;
+}
+.type2-withFon .materialSelection__slider .swiper-button-next{
+                right: calc(50% + 24px);
+            }
+.type2-withFon .materialSelection__slider .swiper-button-prev{
+                left: calc(50% - 142px);
+            }
+@media(max-width: 1024px){
+            .type2-withFon .materialSelection__inner{
+                -webkit-box-orient: vertical;
+                -webkit-box-direction: reverse;
+                    -ms-flex-direction: column-reverse;
+                        flex-direction: column-reverse;
+                margin-top: 32px;
+                padding-bottom: 30px;
+            }
+            .type2-withFon .materialSelection__text, .type2-withFon .materialSelection__slider{
+                max-width: 100%;
+            }
+             .type2-withFon .materialSelection__text{
+                 margin-top: 0;
+             }
+                 .type2-withFon .materialSelection__text .bg-Festival{
+                     display: block;
+                     margin-left: auto;
+                     margin-right: auto;
+                 }
+             .type2-withFon .materialSelection__slider{
+                 position: static;
+             }
+                .type2-withFon .materialSelection__slider .slide-bigImg{
+                    min-height: 420px;
+                }
+                .type2-withFon .materialSelection__slider .dotStyle{
+                    bottom: -5px;
+                }
+                    .type2-withFon .materialSelection__slider .swiper-button-prev, .type2-withFon .materialSelection__slider .swiper-button-next{
+                        bottom: -32px;
+                    }
+                    .type2-withFon .materialSelection__slider .swiper-button-prev{
+                        left: 0;
+                    }
+                    .type2-withFon .materialSelection__slider .swiper-button-next{
+                        right: 0;
+                    }
+                .type2-withFon .materialSelection__slider .swiper-pagination{
+                    display: block;
+                }
+}
+@media(max-width: 991px){
+        .customer-blockCalculat .block-border{
+            min-height: 255px;
+        }
+        .customer-blockCalculat .infoList__wrap {
+            margin-bottom: 0;
+        }
+            .customer-blockCalculat .infoList__wrap .left{
+                padding: 38px 0 0;
+            }
+        .customer-blockCalculat .List-style{
+            padding: 0 0 38px;
+        }
+    .customer-title{
+        padding-bottom: 50px;
+    }
+}
+@media(max-width: 767px){
+                .type2-withFon .materialSelection__slider .slide-bigImg{
+                 height: 420px;
+             }
+    .customer-stages{
+        padding-top: 40px;
+    }
+}
+@media(max-width: 575px){
+                 .type2-withFon .materialSelection__slider .slide-bigImg{
+                      min-height: 62.5vw;
+                      height: 62.5vw;
+                 }
+            .type2-withFon .materialSelection__text{
+                padding-bottom: 16px;
+                padding-top: 10px;
+            }
+                .type2-withFon .materialSelection__text .bg-Festival a{
+                    padding: 14px 0 12px;
+                }
+    .customer-stages{
+        padding-top: 25px;
+    }
+        .customer-blockCalculat .List-style{
+            padding: 0 0 24px;
+        }
+            .customer-blockCalculat .List-style li::after{
+                top: 0;
+            }
+            .customer-blockCalculat .section-title h5{
+                line-height: 1.22;
+                font-size: 1rem;
+                margin-bottom: 8px;
+            }
+        .customer-blockCalculat .infoList__wrap .left{
+            padding-top: 23px;
+        }
+}
+/*# sourceMappingURL=../../../maps/templates/blocks/customers/customers.css.map */

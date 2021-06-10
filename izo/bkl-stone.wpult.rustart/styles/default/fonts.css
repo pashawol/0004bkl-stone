@@ -1,0 +1,64 @@
+@font-face {
+	font-family: "CeraPro";
+	src: url("../assets/fonts/CeraPro-Thin.eot"),
+        url("../assets/fonts/CeraPro-Thin.ttf"),
+        url("../assets/fonts/CeraPro-Thin.woff"),
+        url("../assets/fonts/CeraPro-Thin.woff2");
+    font-weight: 100;
+    font-style: normal;
+}
+@font-face {
+	font-family: "CeraPro";
+	src: url("../assets/fonts/CeraPro-Light.eot"),
+        url("../assets/fonts/CeraPro-Light.ttf"),
+        url("../assets/fonts/CeraPro-Light.woff"),
+        url("../assets/fonts/CeraPro-Light.woff2");
+    font-weight: 300;
+    font-style: normal;
+}
+@font-face {
+	font-family: "CeraPro";
+	src: url("../assets/fonts/CeraPro-Regular.eot"),
+        url("../assets/fonts/CeraPro-Regular.ttf"),
+        url("../assets/fonts/CeraPro-Regular.woff"),
+        url("../assets/fonts/CeraPro-Regular.woff2");
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+	font-family: "CeraPro";
+	src: url("../assets/fonts/CeraPro-Italic.eot"),
+        url("../assets/fonts/CeraPro-Italic.ttf"),
+        url("../assets/fonts/CeraPro-Italic.woff"),
+        url("../assets/fonts/CeraPro-Italic.woff2");
+    font-weight: 400;
+    font-style: italic;
+}
+@font-face {
+	font-family: "CeraPro";
+	src: url("../assets/fonts/CeraPro-Medium.eot"),
+        url("../assets/fonts/CeraPro-Medium.ttf"),
+        url("../assets/fonts/CeraPro-Medium.woff"),
+        url("../assets/fonts/CeraPro-Medium.woff2");
+    font-weight: 500;
+    font-style: normal;
+}
+@font-face {
+	font-family: "CeraPro";
+	src: url("../assets/fonts/CeraPro-Bold.eot"),
+        url("../assets/fonts/CeraPro-Bold.ttf"),
+        url("../assets/fonts/CeraPro-Bold.woff"),
+        url("../assets/fonts/CeraPro-Bold.woff2");
+    font-weight: 700;
+    font-style: normal;
+}
+@font-face {
+	font-family: "CeraPro";
+	src: url("../assets/fonts/CeraPro-Black.eot"),
+        url("../assets/fonts/CeraPro-Black.ttf"),
+        url("../assets/fonts/CeraPro-Black.woff"),
+        url("../assets/fonts/CeraPro-Black.woff2");
+    font-weight: 900;
+    font-style: normal;
+}
+/*# sourceMappingURL=../../maps/styles/default/fonts.css.map */
