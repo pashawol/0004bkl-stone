@@ -1,0 +1,56 @@
+extends layout/main.pug
+
+
+include ../blocks/sContent/_sContent.pug
+include ../blocks/sContact/_sContact.pug
+include ../blocks/mainSlider/_mainSlider.pug
+include ../blocks/blockCatalog/_blockCatalog.pug
+include ../blocks/advantage/_advantage.pug
+include ../blocks/production/_production.pug
+include ../blocks/blockWithVideo/_blockWithVideo.pug
+include ../blocks/sliderGallery/_sliderGallery.pug
+include ../blocks/ourClients/_ourClients.pug
+include ../blocks/servicesTabs/_servicesTabs.pug
+include ../blocks/blockWork/_blockWork.pug
+include ../blocks/blockNews/_blockNews.pug
+include ../blocks/interestingFacts/_interestingFacts.pug
+include ../blocks/blockText/_blockText.pug
+include ../blocks/blockContacts/_blockContacts.pug
+include ../blocks/sCooperations/_sCooperations.pug
+
+block variables
+	- let  mainPage= null
+	- let  bg= null
+
+block title
+	- let  title= 'Модалки'
+	title= title
+block pagecontent
+	//- +mob-mnu()
+	+header()
+	main
+		.section.py-5
+			.container
+				.roww
+					.col-auto
+						a.btn.btn-primary.link-modal-js.d-inline-flex.align-items-center.px-2(href='#modal-order') Заявка на просчет
+					.col-auto
+						a.btn.btn-primary.link-modal-js.d-inline-flex.align-items-center.px-2(href='#modal-sample') Заявка на замер
+					.col-auto
+						a.btn.btn-primary.link-modal-js.d-inline-flex.align-items-center.px-2(href='#modal-callback') Оставить свой отзыв
+		+mainSlider()
+		//+blockCatalog()
+		//+advantage()
+		//+production()
+		//+blockWithVideo()
+		//+sliderGallery()
+		//+ourClients()
+		//+sCooperations
+		//+servicesTabs()
+		//+blockWork()
+		//+blockNews()
+		//+interestingFacts()
+		//+blockText()
+		//+blockContacts()
+	+footer()
+	

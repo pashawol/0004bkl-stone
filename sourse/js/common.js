@@ -1,5 +1,15 @@
- 
 const $ = jQuery;
+let div = document.createElement('div');
+
+div.style.overflowY = 'scroll';
+div.style.width = '50px';
+div.style.height = '50px';
+
+// мы должны вставить элемент в документ, иначе размеры будут равны 0
+document.body.append(div);
+
+let scrollWidth = div.offsetWidth - div.clientWidth;
+div.remove();
 
 function	tabscostume(tab) {
 	const tabs = document.querySelectorAll(tab);
@@ -52,9 +62,68 @@ function	tabscostume(tab) {
 	// });
 
 }
-function eventHandler() {
+function modalCall(){
+	const link = ".link-modal-js";
+	$(link).fancybox({
+		arrows: false,
+		infobar: false,
+		touch: false,
+		type: 'inline',
+		autoFocus: false,
+		i18n: {
+			en: {
+				CLOSE: "Закрыть",
+				NEXT: "Вперед",
+				PREV: "Назад",
+				// PLAY_START: "Start slideshow",
+				// PLAY_STOP: "Pause slideshow",
+				// FULL_SCREEN: "Full screen",
+				// THUMBS: "Thumbnails",
+				// DOWNLOAD: "Download",
+				// SHARE: "Share",
+				// ZOOM: "Zoom"
+			},
+		},
+		beforeLoad: function () {
+			if (!document.querySelector("html").classList.contains(".fixed")) document.querySelector("html").style.marginRight = scrollWidth + 'px';
+		},
+		afterClose: function () {
+			if (!document.querySelector("html").classList.contains(".fixed")) document.querySelector("html").style.marginRight = null;
+			// 	document.querySelector("html").classList.remove("fixed")
+		},
+	});
+	$(".modal-close-js").click(function () {
+		$.fancybox.close();
+	})
+	$.fancybox.defaults.backFocus = false;
+	const linkModal = document.querySelectorAll(link);
+	function addData() {
+		linkModal.forEach(element => {
+			element.addEventListener('click', () => {
+				let modal = document.querySelector(element.getAttribute("href"));
+				const data = element.dataset;
 
-	tabscostume('.tabs--js')
+				function setValue(val, elem) {
+					if (elem && val) {
+						const el = modal.querySelector(elem)
+						el.tagName == "INPUT"
+							? el.value = val
+							: el.innerHTML = val;
+						// console.log(modal.querySelector(elem).tagName)
+					}
+				}
+				setValue(data.title, '.ttu');
+				setValue(data.text, '.after-headline');
+				setValue(data.btn, '.btn');
+				setValue(data.order, '.order');
+			})
+		})
+	}
+	if (linkModal) addData();
+}
+function eventHandler() {
+	tabscostume('.tabs--js');
+	modalCall();
 
 	let defaultSl = {
 		spaceBetween: 0,
@@ -130,6 +199,51 @@ function eventHandler() {
 
 	});
 	// modal window
+	//luckyone Js
+	$('.inp-file-js').change(function (){
+		let nameBox = document.querySelector('.inp-file-name-js');
+		nameBox.innerHTML = this.files[0].name;
+	});
+	//stars
+	//.star-label-js
+	//stars js
+	$('.star-js').click(function () {
+		let thisIndex = $('.star-js').index(this);
+		let allThis = this.parentElement.children;
+
+		for (let i = 0; i <= thisIndex; i++) {
+			allThis[i].classList.add('active');
+		}
+		for (let i = thisIndex + 1; i <= allThis.length - 1; i++) {
+			allThis[i].classList.remove('active');
+		}
+	})
+	//
+	$('img.img-svg-js').each(function () {
+		var $img = $(this);
+		var imgClass = $img.attr('class');
+		var imgURL = $img.attr('src');
+		$.get(imgURL, function (data) {
+			// Get the SVG tag, ignore the rest
+			var $svg = $(data).find('svg'); // Add replaced image's classes to the new SVG
+
+			if (typeof imgClass !== 'undefined') {
+				$svg = $svg.attr('class', imgClass + ' replaced-svg');
+			} // Remove any invalid XML tags as per http://validator.w3.org
+
+
+			$svg = $svg.removeAttr('xmlns:a'); // Check if the viewport is set, if the viewport is not set the SVG wont't scale.
+
+			if (!$svg.attr('viewBox') && $svg.attr('height') && $svg.attr('width')) {
+				$svg.attr('viewBox', '0 0 ' + $svg.attr('height') + ' ' + $svg.attr('width'));
+			} // Replace image with new SVG
+
+
+			$img.replaceWith($svg);
+		}, 'xml');
+	});
+
+	//end luckyone Js
 
 };
 if (document.readyState !== 'loading') {
@@ -137,11 +251,3 @@ if (document.readyState !== 'loading') {
 } else {
 	document.addEventListener('DOMContentLoaded', eventHandler);
 }
-
-// window.onload = function () {
-// 	document.body.classList.add('loaded_hiding');
-// 	window.setTimeout(function () {
-// 		document.body.classList.add('loaded');
-// 		document.body.classList.remove('loaded_hiding');
-// 	}, 500);
-// }

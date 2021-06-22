@@ -3,7 +3,6 @@ $default-font: "roboto";
 $addr: '../fonts/';
 $file-format: woff2;
 
-
 // If font from googlefont, next lines remove
 
 @include font-face ($default-font, $addr + "Roboto-Regular/Roboto-Regular", $file-formats: $file-format);

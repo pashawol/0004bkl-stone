@@ -1,12 +1,20 @@
 "use strict";
 
-function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); keys.push.apply(keys, symbols); } return keys; }
+function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) { symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); } keys.push.apply(keys, symbols); } return keys; }
 
 function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { ownKeys(Object(source), true).forEach(function (key) { _defineProperty(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }
 
 function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
 
 var $ = jQuery;
+var div = document.createElement('div');
+div.style.overflowY = 'scroll';
+div.style.width = '50px';
+div.style.height = '50px'; // мы должны вставить элемент в документ, иначе размеры будут равны 0
+
+document.body.append(div);
+var scrollWidth = div.offsetWidth - div.clientWidth;
+div.remove();
 
 function tabscostume(tab) {
 	var tabs = document.querySelectorAll(tab); // const indexOf = element => Array.from(element.parentNode.children).indexOf(element);
@@ -49,10 +57,70 @@ function tabscostume(tab) {
 	// });
 }
 
+function modalCall() {
+	var link = ".link-modal-js";
+	$(link).fancybox({
+		arrows: false,
+		infobar: false,
+		touch: false,
+		type: 'inline',
+		autoFocus: false,
+		i18n: {
+			en: {
+				CLOSE: "Закрыть",
+				NEXT: "Вперед",
+				PREV: "Назад" // PLAY_START: "Start slideshow",
+				// PLAY_STOP: "Pause slideshow",
+				// FULL_SCREEN: "Full screen",
+				// THUMBS: "Thumbnails",
+				// DOWNLOAD: "Download",
+				// SHARE: "Share",
+				// ZOOM: "Zoom"
+
+			}
+		},
+		beforeLoad: function beforeLoad() {
+			if (!document.querySelector("html").classList.contains(".fixed")) document.querySelector("html").style.marginRight = scrollWidth + 'px';
+		},
+		afterClose: function afterClose() {
+			if (!document.querySelector("html").classList.contains(".fixed")) document.querySelector("html").style.marginRight = null; // 	document.querySelector("html").classList.remove("fixed")
+		}
+	});
+	$(".modal-close-js").click(function () {
+		$.fancybox.close();
+	});
+	$.fancybox.defaults.backFocus = false;
+	var linkModal = document.querySelectorAll(link);
+
+	function addData() {
+		linkModal.forEach(function (element) {
+			element.addEventListener('click', function () {
+				var modal = document.querySelector(element.getAttribute("href"));
+				var data = element.dataset;
+
+				function setValue(val, elem) {
+					if (elem && val) {
+						var el = modal.querySelector(elem);
+						el.tagName == "INPUT" ? el.value = val : el.innerHTML = val; // console.log(modal.querySelector(elem).tagName)
+					}
+				}
+
+				setValue(data.title, '.ttu');
+				setValue(data.text, '.after-headline');
+				setValue(data.btn, '.btn');
+				setValue(data.order, '.order');
+			});
+		});
+	}
+
+	if (linkModal) addData();
+}
+
 function eventHandler() {
 	var _defaultSl;
 
 	tabscostume('.tabs--js');
+	modalCall();
 	var defaultSl = (_defaultSl = {
 		spaceBetween: 0,
 		lazy: {
@@ -105,6 +173,51 @@ function eventHandler() {
 			prevEl: '.sProjectMaterials .swiper-button-prev'
 		}
 	})); // modal window
+	//luckyone Js
+
+	$('.inp-file-js').change(function () {
+		var nameBox = document.querySelector('.inp-file-name-js');
+		nameBox.innerHTML = this.files[0].name;
+	}); //stars
+	//.star-label-js
+	//stars js
+
+	$('.star-js').click(function () {
+		var thisIndex = $('.star-js').index(this);
+		var allThis = this.parentElement.children;
+
+		for (var i = 0; i <= thisIndex; i++) {
+			allThis[i].classList.add('active');
+		}
+
+		for (var _i = thisIndex + 1; _i <= allThis.length - 1; _i++) {
+			allThis[_i].classList.remove('active');
+		}
+	}); //
+
+	$('img.img-svg-js').each(function () {
+		var $img = $(this);
+		var imgClass = $img.attr('class');
+		var imgURL = $img.attr('src');
+		$.get(imgURL, function (data) {
+			// Get the SVG tag, ignore the rest
+			var $svg = $(data).find('svg'); // Add replaced image's classes to the new SVG
+
+			if (typeof imgClass !== 'undefined') {
+				$svg = $svg.attr('class', imgClass + ' replaced-svg');
+			} // Remove any invalid XML tags as per http://validator.w3.org
+
+
+			$svg = $svg.removeAttr('xmlns:a'); // Check if the viewport is set, if the viewport is not set the SVG wont't scale.
+
+			if (!$svg.attr('viewBox') && $svg.attr('height') && $svg.attr('width')) {
+				$svg.attr('viewBox', '0 0 ' + $svg.attr('height') + ' ' + $svg.attr('width'));
+			} // Replace image with new SVG
+
+
+			$img.replaceWith($svg);
+		}, 'xml');
+	}); //end luckyone Js
 }
 
 ;
@@ -113,10 +226,4 @@ if (document.readyState !== 'loading') {
 	eventHandler();
 } else {
 	document.addEventListener('DOMContentLoaded', eventHandler);
-} // window.onload = function () {
-// 	document.body.classList.add('loaded_hiding');
-// 	window.setTimeout(function () {
-// 		document.body.classList.add('loaded');
-// 		document.body.classList.remove('loaded_hiding');
-// 	}, 500);
-// }
+}
