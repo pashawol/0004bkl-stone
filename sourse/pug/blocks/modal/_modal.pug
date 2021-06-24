@@ -16,7 +16,7 @@ mixin modal()
 							.bg-Festival.modalBtn-bottom.closeThis-modal
 								a.defLink(href='index.html') Вернуться на страницу
 	//
-	+b.modal-win(id="modal-order" class=" " style="display: none" )
+	+b.modal-win--js(id="modal-order" class=" " style="display: none" )
 		+form-wrap
 			+e.title Заявка на просчет
 			+e.row.roww
@@ -63,7 +63,7 @@ mixin modal()
 					|
 					a(href='#') Согласие на обработку персональных данных
 	//
-	+b.modal-win(id="modal-callback" class=" " style="display: none" )
+	+b.modal-win--js(id="modal-callback" class=" " style="display: none" )
 		+form-wrap
 			+e.title Оставить свой отзыв
 			+e.row.roww

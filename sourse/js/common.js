@@ -200,9 +200,12 @@ function eventHandler() {
 	});
 	// modal window
 	//luckyone Js
-	$('.inp-file-js').change(function (){
-		let nameBox = document.querySelector('.inp-file-name-js');
-		nameBox.innerHTML = this.files[0].name;
+	$('.modal-win--js').each(function (){
+		let modalWin = this;
+		$(modalWin).find('.inp-file-js').change(function (){
+			let nameBox = modalWin.querySelector('.inp-file-name-js');
+			nameBox.innerHTML = this.files[0].name;
+		});
 	});
 	//stars
 	//.star-label-js
